@@ -39,3 +39,10 @@ Introducing a single file, which is type checked by IDE, but simply because we a
     </summary>
 Sometimes, valid javascript, can be the cause for unexpected errors to occur, even though the code does not cause exception on its own.
 </details>
+
+<details>
+    <summary>
+        <ins>4. Typo unsafety</ins>
+    </summary>
+Writing code during development without any type analysis, like Intellisense in VSCode does for us can lead to a large number of errors, especially typos, which are the worst once you find them out.
+</details>
