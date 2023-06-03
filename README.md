@@ -81,6 +81,6 @@ npx tsc --noEmitOnError src/6_hello_world/index.ts
         <ins>7. Explicit types</ins>
     </summary>
 
-IDE that supports TS (like VSCode using TS under the hood), can inffer the types, but sometimes we want to explicitly specify them. The syntax is `name: type`.
+IDE that supports TS (like VSCode using TS under the hood), can inffer the types, but sometimes we want to explicitly specify them. The syntax is `name: type`. Post compilation, the output no longer contains explicit type definitions.
 </details>
 
