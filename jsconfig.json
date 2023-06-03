@@ -5,5 +5,6 @@
   "exclude": [
     "src/1_type_unsafety/disabled.js",
     "src/4_typo_unsafety/index.js",
+    "src/5_uncalled_function_unsafety/index.js",
   ],
 }

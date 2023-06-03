@@ -46,3 +46,10 @@ Sometimes, valid javascript, can be the cause for unexpected errors to occur, ev
     </summary>
 Writing code during development without any type analysis, like Intellisense in VSCode does for us can lead to a large number of errors, especially typos, which are the worst once you find them out.
 </details>
+
+<details>
+    <summary>
+        <ins>5. Uncalled function unsafety</ins>
+    </summary>
+Calling functions can easily be missed especially when working nested objects (try using fakerjs in js project with no ts).
+</details>
