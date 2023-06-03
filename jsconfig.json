@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "checkJs": true
+  },
+  "exclude": ["src/1_type_safety/disabled.js"],
+}
