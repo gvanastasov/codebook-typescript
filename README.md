@@ -75,3 +75,12 @@ The compiler will then type check and compile the TS into JS right next to it. E
 npx tsc --noEmitOnError src/6_hello_world/index.ts
 ```
 </details>
+
+<details>
+    <summary>
+        <ins>7. Explicit types</ins>
+    </summary>
+
+IDE that supports TS (like VSCode using TS under the hood), can inffer the types, but sometimes we want to explicitly specify them. The syntax is `name: type`.
+</details>
+
