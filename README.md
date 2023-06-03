@@ -21,6 +21,8 @@ When typescript?
 
 It's worth noting that TypeScript introduces additional complexity compared to writing plain JavaScript. If you're working on a small project, have tight deadlines, or require rapid prototyping, TypeScript might not provide substantial benefits, and JavaScript could be a more suitable choice.
 
+> Reminder - most of the code inhere needs an IDE to make any sense at all, so pull down this repo and try it out for better understanding.
+
 ## Chapters
 <details>
     <summary>
