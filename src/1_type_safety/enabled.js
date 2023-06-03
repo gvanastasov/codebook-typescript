@@ -4,11 +4,13 @@
     and checked.
 */
 
-// just a dummy message.
-const message = "Dummy message.";
-
-// no error during 'build', no error during 'run'
-message.toLowerCase();
-
-// error during both 'build' and 'run' 
-message();
+(function() {
+    // just a dummy message.
+    const message = "Dummy message.";
+    
+    // no error during 'development', no error during 'runtime'
+    message.toLowerCase();
+    
+    // error during both 'development' and 'runtime' 
+    message();
+})();
