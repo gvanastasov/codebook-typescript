@@ -61,6 +61,7 @@ Calling functions can easily be missed especially when working nested objects (t
     <summary>
         <ins>6. Hello world</ins>
     </summary>
+
 ```sh
 # install ts locally (or globally depending on your prefs)
 npm install --save-dev typescript
@@ -68,5 +69,9 @@ npm install --save-dev typescript
 npx tsc src/6_hello_world/index.ts
 ```
 
-The compiler will then type check and compile the TS into JS right next to it.
+The compiler will then type check and compile the TS into JS right next to it. Even though theres a function arg missing, the compiler still compiled the source into JS target. We can prevent compiler from 'emitting' output, if an error has occured via the following:
+
+```sh
+npx tsc --noEmitOnError src/6_hello_world/index.ts
+```
 </details>
