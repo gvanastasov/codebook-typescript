@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gvanastasov/example-typescript/issues"
   },
-  "homepage": "https://github.com/gvanastasov/example-typescript#readme"
+  "homepage": "https://github.com/gvanastasov/example-typescript#readme",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
 }

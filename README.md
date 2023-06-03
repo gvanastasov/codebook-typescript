@@ -10,6 +10,10 @@ Why typescript?
 4. Maintainability - refactoring is getting easier and more safe, due to type safety being triggered, you can observe dependencies, references and etc. all comming from the static analysis.
 5. Adoption - since TypeScript is build on top of Javascript, it can be easily be adopted. Even further, that can happen gradually.
 
+When typescript?
+
+It's worth noting that TypeScript introduces additional complexity compared to writing plain JavaScript. If you're working on a small project, have tight deadlines, or require rapid prototyping, TypeScript might not provide substantial benefits, and JavaScript could be a more suitable choice.
+
 
 Notes:
 
@@ -17,6 +21,7 @@ Notes:
 - Typescript is a superset of Javascript, which means that any valid JavaScript code is also valid TypeScript code. But in addition, it introduces a compiler (tsc) that translates TypeScript code into JavaScript, enabling you to leverage the additional features and benefits of TypeScript while still targeting JavaScript as the execution platform.
 - TS Scope - tsc considers all files included in the compiler to belong to the same global space. This applies for js files too if they are included by the config. To prevent scope polution, each file is wrapped inisde a  IIFE to separate scopes.
 - Technically a typical lifecycle of a javascript codebase, would be development, followed by runtime execution. There are of course other stages of the lifecycle, like transpiling, building, generating, testing, publishing, deploying and etc. For simplicity sake, in here we will sum all pre-runtime stages into 'development' and then 'runtime'. 
+- Given all this, its safe to say, Typescript introduces a mandatory stage - compilation - as an additional cost, but prise of greatly reducing bugs is much appreciated.
 
 ## Chapters
 <details>
@@ -52,4 +57,18 @@ Writing code during development without any type analysis, like Intellisense in 
         <ins>5. Uncalled function unsafety</ins>
     </summary>
 Calling functions can easily be missed especially when working nested objects (try using fakerjs in js project with no ts).
+</details>
+
+<details>
+    <summary>
+        <ins>6. Hello world</ins>
+    </summary>
+```sh
+# install ts locally (or globally depending on your prefs)
+npm install --save-dev typescript
+# run the compiler
+npx tsc src/6_hello_world/index.ts
+```
+
+The compiler will then type check and compile the TS into JS right next to it.
 </details>
