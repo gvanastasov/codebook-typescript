@@ -1,3 +1,7 @@
+/*
+    Typos are easy to make without something to analyse our code.
+*/
+
 (function() {
     // just a dummy message.
     const message = "Dummy message.";
