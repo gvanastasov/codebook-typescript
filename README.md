@@ -21,16 +21,14 @@ Notes:
 ## Chapters
 <details>
     <summary>
-        1. Type Safety
+        <ins>1. Type Unsafety</ins>
     </summary>
-
-    Introducing two files, namely enabled.js and disabled.js. Check jsconfig.json, where second one is disalbed from type checking, which will introduce an error during execution of the script, which for enabled.js we will be hinted that theres an error prior to execution.
+Introducing two files, namely enabled.js and disabled.js. Check jsconfig.json, where second one is disalbed from type checking, which will introduce an error during execution of the script, which for enabled.js we will be hinted that theres an error prior to execution.
 </details>
 
 <details>
     <summary>
-        2. Hidden Unsafety
+        <ins>2. Hidden Unsafety</ins>
     </summary>
-
-    Introducing a single file, which is type checked by IDE, but simply because we are running javascript with no notion of object types and interfaces, we are having an error that only catchable during runtime (or if we have hawk eyes during development).
+Introducing a single file, which is type checked by IDE, but simply because we are running javascript with no notion of object types and interfaces, we are having an error that only catchable during runtime (or if we have hawk eyes during development).
 </details>
