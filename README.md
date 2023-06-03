@@ -15,6 +15,8 @@ Notes:
 
 - Javascript is a scripting language, also better known as interpreted language, meaning that the code is executed line by line at runtime rather than being compiled into a binary form before execution. The interpretation is usually done by a javascript interpretator - some common ones being Node.js, or any browser (with support for javascript, which is probably all of them).
 - Typescript is a superset of Javascript, which means that any valid JavaScript code is also valid TypeScript code. But in addition, it introduces a compiler (tsc) that translates TypeScript code into JavaScript, enabling you to leverage the additional features and benefits of TypeScript while still targeting JavaScript as the execution platform.
+- TS Scope - tsc considers all files included in the compiler to belong to the same global space. This applies for js files too if they are included by the config. To prevent scope polution, each file is wrapped inisde a  IIFE to separate scopes.
+- Technically a typical lifecycle of a javascript codebase, would be development, followed by runtime execution. There are of course other stages of the lifecycle, like transpiling, building, generating, testing, publishing, deploying and etc. For simplicity sake, in here we will sum all pre-runtime stages into 'development' and then 'runtime'. 
 
 ## Chapters
 <details>
@@ -23,4 +25,12 @@ Notes:
     </summary>
 
     Introducing two files, namely enabled.js and disabled.js. Check jsconfig.json, where second one is disalbed from type checking, which will introduce an error during execution of the script, which for enabled.js we will be hinted that theres an error prior to execution.
+</details>
+
+<details>
+    <summary>
+        2. Hidden Unsafety
+    </summary>
+
+    Introducing a single file, which is type checked by IDE, but simply because we are running javascript with no notion of object types and interfaces, we are having an error that only catchable during runtime (or if we have hawk eyes during development).
 </details>
