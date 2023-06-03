@@ -32,3 +32,10 @@ Introducing two files, namely enabled.js and disabled.js. Check jsconfig.json, w
     </summary>
 Introducing a single file, which is type checked by IDE, but simply because we are running javascript with no notion of object types and interfaces, we are having an error that only catchable during runtime (or if we have hawk eyes during development).
 </details>
+
+<details>
+    <summary>
+        <ins>3. Non exception unsafety</ins>
+    </summary>
+Sometimes, valid javascript, can be the cause for unexpected errors to occur, even though the code does not cause exception on its own.
+</details>
