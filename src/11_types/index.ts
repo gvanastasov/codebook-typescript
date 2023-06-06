@@ -31,4 +31,18 @@
 
     // error
     literalDigits = 'four';
+
+       // unions
+       function printNumber(number: string | number): void {
+        console.log(number);
+        return;
+    }
+    // no error during 'development'
+    printNumber(1);
+
+    // no error during 'development'
+    printNumber(2);
+
+    // error
+    printNumber({ number: 3 });
 })();
