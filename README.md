@@ -115,4 +115,11 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
         <ins>12. Interfaces</ins>
     </summary>
 </details>
+
+<details>
+    <summary>
+        <ins>13. Casting</ins>
+    </summary>
+</details>
+
 more to come soon...
