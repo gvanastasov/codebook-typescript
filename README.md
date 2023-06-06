@@ -103,4 +103,10 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
         <ins>10. Objects</ins>
     </summary>
 </details>
+
+<details>
+    <summary>
+        <ins>11. Types</ins>
+    </summary>
+</details>
 more to come soon...
