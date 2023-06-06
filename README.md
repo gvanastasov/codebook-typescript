@@ -91,4 +91,10 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
         <ins>9. Primitives</ins>
     </summary>
 </details>
+
+<details>
+    <summary>
+        <ins>10. Functions</ins>
+    </summary>
+</details>
 more to come soon...
