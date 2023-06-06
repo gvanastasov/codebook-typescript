@@ -122,4 +122,9 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
     </summary>
 </details>
 
+<details>
+    <summary>
+        <ins>14. Arrays</ins>
+    </summary>
+</details>
 more to come soon...
