@@ -4,7 +4,7 @@
   "description": "Handbook excersies from zero to hero in typescript.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "chapter:8": "cd src/8_primitives && npx tsc index.ts --outFile __generated_index.js --target es2020 && node __generated_index.js"
   },
   "repository": {
     "type": "git",
