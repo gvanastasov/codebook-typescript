@@ -102,6 +102,12 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
     <summary>
         <ins>10. Objects</ins>
     </summary>
+
+- Type: any
+- Arguments
+- Inline type definition
+
+[Read Here](src/10_objects/index.ts)
 </details>
 
 <details>
