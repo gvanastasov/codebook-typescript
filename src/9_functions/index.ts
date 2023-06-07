@@ -4,7 +4,7 @@
      * we pass arguments (with type binding), as well as return
      * type of the function. The syntax follows TS general syntax
      * 
-     * {object_name}: {type_definition}
+     * {function_name}({arguments}): {type_definition}
      */
     function syntax() {
         function add(a: number, b: number): number {
