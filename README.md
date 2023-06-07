@@ -1,5 +1,17 @@
 # **Codebook - Typescript**
-Learn by examples from zero to hero in typescript.
+Learn by examples from zero to hero in typescript. This is suppose to give a crash course for learning typescript.
+
+## **Quick Start**
+1. clone repo
+2. install dependencies `npm install`
+3. run chapters
+
+```sh
+# replace number with chapter you want to see output from.
+npm run chapter:1
+```
+
+Since most of the things will simply output some dummy text, is much better to just read from top to bottom the scripts themselves. Please refer to the sections below to find quick links, or simply head over to `./src` and navigate yourself around.
 
 What is typescript?
 
@@ -25,14 +37,6 @@ Reminder - most of the code inhere needs an IDE to make any sense at all, so pul
 
 ## **Chapters**
 
-> 9\. `Functions` - [read code](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_functions/index.ts)
-
-<ul>
-    <li>9.1 syntax</li>
-    <li>9.2 no return type - void</li>
-    <li>9.3 context</li>
-    <li>9.4 narrowing</li>
-</ul>
 
 <details>
     <summary>
@@ -96,11 +100,21 @@ npx tsc --noEmitOnError src/6_hello_world/index.ts
 IDE that supports TS (like VSCode using TS under the hood), can inffer the types, but sometimes we want to explicitly specify them. The syntax is `name: type`. Post compilation, the output no longer contains explicit type definitions.
 </details>
 
-<details>
-    <summary>
-        <ins>8. Primitives</ins>
-    </summary>
-</details>
+> 8\. `Primitives` - [read code](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_primitives/index.ts)
+<ul>
+    <li>8.1 define</li>
+    <li>8.1 define</li>
+</ul>
+
+
+> 9\. `Functions` - [read code](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_functions/index.ts)
+
+<ul>
+    <li>9.1 syntax</li>
+    <li>9.2 no return type - void</li>
+    <li>9.3 context</li>
+    <li>9.4 narrowing</li>
+</ul>
 
 <details>
     <summary>
