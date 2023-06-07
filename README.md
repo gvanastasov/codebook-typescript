@@ -96,6 +96,12 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
     <summary>
         <ins>9. Functions</ins>
     </summary>
+
+- syntax
+- no return type - void
+- context
+
+[Read Here](src/9_functions/index.ts)
 </details>
 
 <details>
@@ -103,9 +109,9 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
         <ins>10. Objects</ins>
     </summary>
 
-- Type: any
-- Arguments
-- Inline type definition
+- type: any
+- arguments
+- inline type definition
 
 [Read Here](src/10_objects/index.ts)
 </details>
