@@ -1,5 +1,5 @@
 # **Codebook - Typescript**
-Learn by examples from zero to hero in typescript. This is suppose to give a crash course for learning typescript.
+Learn by examples from zero to hero in typescript. This repository was used a practice and resource gathering for with the intent to give a crash course in learning typescript. Some topics might not be covered in depth, or might be missing.
 
 ## **Quick Start**
 1. clone repo
@@ -11,7 +11,7 @@ Learn by examples from zero to hero in typescript. This is suppose to give a cra
 npm run chapter:1
 ```
 
-Since most of the things will simply output some dummy text, is much better to just read from top to bottom the scripts themselves. Please refer to the sections below to find quick links, or simply head over to `./src` and navigate yourself around.
+Since most of the things will simply output some dummy text, is much better to just read from top to bottom the scripts themselves. Please refer to the sections below to find quick links, or simply head over to `./src` and navigate yourself around. Running chapters will compile the code for them and will generate a file with prefix __generated and run that inside a node process. Probably unnecessery to explain it, but still - make sure your node is up and running - `Node 16` at minimum, specified in engines too. No real reasons, but its the one this is tested and verified to work with. PS ECMA2020 target in the compiler requires a minimum of node-10v.
 
 What is typescript?
 
@@ -23,11 +23,11 @@ What is typescript?
 
 Why to typescript?
 
-1. Static analysis - the codebase becomes 'strongly typed', meaning that objects annotation is bound to interfaces and declarations, allowing you to have the 'shape' or the 'type' of each object before runtime. This improves catching bugs (via type safety) before running the application.
-2. Tooling - IDE with support for typescript will greatly improve your coding workflows. VSCode uses typescript under the hood and helps even with JS code bases.
-3. Readability - having explicit object definition (of types) helps understand what an object does and how it behaves and is not just a 'random' object with properties. Further TypeScript gives a boost to javascript by introducing language features, like interfaces, generics and other, all of which allows you to further structure one's codebase even better.
-4. Maintainability - refactoring is getting easier and more safe, due to type safety being triggered, you can observe dependencies, references and etc. all comming from the static analysis.
-5. Adoption - since TypeScript is build on top of Javascript, it can be easily be adopted. Even further, that can happen gradually.
+- Static analysis - the codebase becomes 'strongly typed', meaning that objects annotation is bound to interfaces and declarations, allowing you to have the 'shape' or the 'type' of each object before runtime. This improves catching bugs (via type safety) before running the application.
+- Tooling - IDE with support for typescript will greatly improve your coding workflows. VSCode uses typescript under the hood and helps even with JS code bases.
+- Readability - having explicit object definition (of types) helps understand what an object does and how it behaves and is not just a 'random' object with properties. Further TypeScript gives a boost to javascript by introducing language features, like interfaces, generics and other, all of which allows you to further structure one's codebase even better.
+- Maintainability - refactoring is getting easier and more safe, due to type safety being triggered, you can observe dependencies, references and etc. all comming from the static analysis.
+- Adoption - since TypeScript is build on top of Javascript, it can be easily be adopted. Even further, that can happen gradually.
 
 When to typescript?
 
