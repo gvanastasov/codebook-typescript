@@ -100,6 +100,7 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
 - syntax
 - no return type - void
 - context
+- narrowing
 
 [Read Here](src/9_functions/index.ts)
 </details>

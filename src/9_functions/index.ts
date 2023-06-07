@@ -55,3 +55,28 @@
         );
     }
 )();
+
+(
+    /**
+     * @description when using type definitions with no explicity
+     * for example unions, we need to provide 'type guards' in order
+     * to ensure type safety. Typescript analyzes those phrases and
+     * casts the object to the type guard definition under the hood.
+     *  
+     * @param id number | string
+     * @returns boolean
+     */
+    function narrowing(id: number | string): boolean {
+        let result = false;
+        try {
+            // @ts-expect-error
+            result = (id.includes("admin"));
+        } catch (error) {
+            console.log("Property 'includes' does not exist on type 'number'.")
+        }
+
+        result = (typeof id === 'string' && id.includes("admin"))
+
+        return result;
+    }
+)("admin");
