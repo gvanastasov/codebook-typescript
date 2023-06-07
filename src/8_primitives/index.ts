@@ -1,3 +1,5 @@
+import chalk from 'chalk'
+
 /**
  * @description Primitives form the foundational building blocks of data in 
  * TypeScript, providing essential types for representing values. TypeScript 
@@ -7,7 +9,7 @@
  * 
  */
 
-console.log('Chapter 8 - Primitives\n');
+console.log(chalk.bgBlueBright('Chapter 8 - Primitives\n'));
 
 (
     /**
@@ -95,14 +97,14 @@ console.log('Chapter 8 - Primitives\n');
     function thrutness() {
         console.log("8.2 thrutness");
 
-        let falsy: any[] = [0, NaN, "", 0n, null, undefined];
+        let falsy: any[] = [0, NaN, "", BigInt(0), null, undefined];
         falsy.forEach((x) => {
             if (!x) {
                 console.log(`${x} is false.`);
             }
         });
 
-        let truthy: any[] = [1, "a", 1n, { a: 1 }, function() {}]
+        let truthy: any[] = [1, "a", BigInt(1), { a: 1 }, function() {}]
         truthy.forEach((x) => {
             if (x) {
                 console.log(`${x} is true.`);

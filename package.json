@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Handbook excersies from zero to hero in typescript.",
   "main": "index.js",
+  "type": "module",
   "engines": {
     "node": ">=16.0.0"
-  },  
+  },
   "scripts": {
-    "chapter:8": "cd src/8_primitives && npx tsc index.ts --outFile __generated_index.js --target es2020 && node __generated_index.js"
+    "build": "tsc && mv dist/*.js dist/prefix-",
+    "chapter:8": "node ./dist/8_primitives/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,10 @@
   },
   "homepage": "https://github.com/gvanastasov/example-typescript#readme",
   "devDependencies": {
+    "@types/node": "^20.2.5",
     "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0"
   }
 }

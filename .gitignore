@@ -39,6 +39,3 @@ dist/**/*
 
 # ignore yarn.lock
 yarn.lock
-
-# Artefacts
-__generated*

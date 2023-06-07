@@ -4,6 +4,7 @@ Learn by examples from zero to hero in typescript. This repository was used a pr
 ## **Quick Start**
 1. clone repo
 2. install dependencies `npm install`
+3. compile typescript `npm run build`
 3. run chapters
 
 ```sh
@@ -11,7 +12,7 @@ Learn by examples from zero to hero in typescript. This repository was used a pr
 npm run chapter:1
 ```
 
-Since most of the things will simply output some dummy text, is much better to just read from top to bottom the scripts themselves. Please refer to the sections below to find quick links, or simply head over to `./src` and navigate yourself around. Running chapters will compile the code for them and will generate a file with prefix __generated and run that inside a node process. Probably unnecessery to explain it, but still - make sure your node is up and running - `Node 16` at minimum, specified in engines too. No real reasons, but its the one this is tested and verified to work with. PS ECMA2020 target in the compiler requires a minimum of node-10v.
+Since most of the things will simply output some dummy text, is much better to just read from top to bottom the scripts themselves. Please refer to the sections below to find quick links, or simply head over to `./src` and navigate yourself around. Probably unnecessery to explain it, but still - make sure your node is up and running - `Node 16` at minimum, specified in engines too. No real reasons, but its the one, the code repo is tested and verified to work with. PS ECMA2020 target in the compiler requires a minimum of node-10v.
 
 What is typescript?
 

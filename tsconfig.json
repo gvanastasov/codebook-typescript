@@ -1,8 +1,16 @@
 {
-    "compilerOptions": {
-      "target": "es2020",
-      "lib": ["es2020", "dom"],
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "ESNext", "dom"],
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "chalk": ["node_modules/chalk/index"]
     },
-    "include": ["src"]
-  }
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
   
