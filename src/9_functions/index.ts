@@ -69,7 +69,9 @@
      * for example unions, we need to provide 'type guards' in order
      * to ensure type safety. Typescript analyzes those phrases and
      * casts the object to the type guard definition under the hood.
-     *  
+     * 
+     * type guard: (typeof {object} === {type})
+     * 
      * @param id number | string
      * @returns boolean
      */
@@ -82,6 +84,7 @@
             console.log("Property 'includes' does not exist on type 'number'.")
         }
 
+        // OK
         result = (typeof id === 'string' && id.includes("admin"))
 
         return result;
