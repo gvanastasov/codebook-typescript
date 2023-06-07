@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Handbook excersies from zero to hero in typescript.",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },  
   "scripts": {
     "chapter:8": "cd src/8_primitives && npx tsc index.ts --outFile __generated_index.js --target es2020 && node __generated_index.js"
   },
