@@ -1,7 +1,7 @@
-# **Example Typescript**
-Handbook excersies from zero to hero in typescript. 
+# **Codebook - Typescript**
+Learn by examples from zero to hero in typescript.
 
-What typescript?
+What is typescript?
 
 - Javascript is a scripting language, also better known as interpreted language, meaning that the code is executed line by line at runtime rather than being compiled into a binary form before execution. The interpretation is usually done by a javascript interpretator - some common ones being Node.js, or any browser (with support for javascript, which is probably all of them).
 - Typescript is a superset of Javascript, which means that any valid JavaScript code is also valid TypeScript code. But in addition, it introduces a compiler (tsc) that translates TypeScript code into JavaScript, enabling you to leverage the additional features and benefits of TypeScript while still targeting JavaScript as the execution platform.
@@ -9,7 +9,7 @@ What typescript?
 - Technically a typical lifecycle of a javascript codebase, would be development, followed by runtime execution. There are of course other stages of the lifecycle, like transpiling, building, generating, testing, publishing, deploying and etc. For simplicity sake, in here we will sum all pre-runtime stages into 'development' and then 'runtime'. 
 - Given all this, its safe to say, Typescript introduces a mandatory stage - compilation - as an additional cost, but prise of greatly reducing bugs is much appreciated.
 
-Why typescript?
+Why to typescript?
 
 1. Static analysis - the codebase becomes 'strongly typed', meaning that objects annotation is bound to interfaces and declarations, allowing you to have the 'shape' or the 'type' of each object before runtime. This improves catching bugs (via type safety) before running the application.
 2. Tooling - IDE with support for typescript will greatly improve your coding workflows. VSCode uses typescript under the hood and helps even with JS code bases.
@@ -17,13 +17,23 @@ Why typescript?
 4. Maintainability - refactoring is getting easier and more safe, due to type safety being triggered, you can observe dependencies, references and etc. all comming from the static analysis.
 5. Adoption - since TypeScript is build on top of Javascript, it can be easily be adopted. Even further, that can happen gradually.
 
-When typescript?
+When to typescript?
 
 It's worth noting that TypeScript introduces additional complexity compared to writing plain JavaScript. If you're working on a small project, have tight deadlines, or require rapid prototyping, TypeScript might not provide substantial benefits, and JavaScript could be a more suitable choice.
 
-> Reminder - most of the code inhere needs an IDE to make any sense at all, so pull down this repo and try it out for better understanding.
+Reminder - most of the code inhere needs an IDE to make any sense at all, so pull down this repo and try it out for better understanding.
 
-## Chapters
+## **Chapters**
+
+> 9\. `Functions` - [read code](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_functions/index.ts)
+
+<ul>
+    <li>9.1 syntax</li>
+    <li>9.2 no return type - void</li>
+    <li>9.3 context</li>
+    <li>9.4 narrowing</li>
+</ul>
+
 <details>
     <summary>
         <ins>1. Type Unsafety</ins>
@@ -90,19 +100,6 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
     <summary>
         <ins>8. Primitives</ins>
     </summary>
-</details>
-
-<details>
-    <summary>
-        <ins>9. Functions</ins>
-    </summary>
-
-- syntax
-- no return type - void
-- context
-- narrowing
-
-[Read Here](src/9_functions/index.ts)
 </details>
 
 <details>

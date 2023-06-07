@@ -1,3 +1,21 @@
+/**
+ * TypeScript functions provide a powerful way to encapsulate reusable 
+ * blocks of code and enable strong typing for improved code quality and 
+ * reliability. With TypeScript, functions can have explicit parameter 
+ * and return type annotations, allowing you to catch potential errors 
+ * during development. The language supports both named and anonymous 
+ * functions, along with arrow functions that provide concise syntax for 
+ * defining function expressions. TypeScript functions also offer optional 
+ * and default parameters, making them flexible and accommodating to
+ *  different usage scenarios. Additionally, TypeScript introduces function 
+ * overloading, enabling you to define multiple function signatures with 
+ * different parameter and return types. This enhances code expressiveness 
+ * and provides comprehensive type checking. Whether you're working with 
+ * simple utility functions or complex class methods, TypeScript empowers 
+ * you to write robust and maintainable code by enforcing type safety 
+ * throughout your application's function ecosystem.
+ */
+
 (
     /**
      * @description Just as a regular function in javascript,
