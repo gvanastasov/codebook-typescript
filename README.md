@@ -36,45 +36,57 @@ It's worth noting that TypeScript introduces additional complexity compared to w
 
 Reminder - most of the code inhere needs an IDE to make any sense at all, so pull down this repo and try it out for better understanding.
 
-## **Chapters**
+## **Table of Contents**
+- [Chapter 1: Type unsafety](#chapter-1-introduction)
+- [Chapter 2: Hidden unsafety](#chapter-2-main-topic)
+- [Chapter 3: Non exception unsafety](#chapter-2-main-topic)
+- [Chapter 4: Typo unsafety](#chapter-2-main-topic)
+- [Chapter 5: Functions unsafety](#chapter-2-main-topic)
+- [Chapter 6: Hello World!](#chapter-2-main-topic)
+- [Chapter 7: Explicit types](#chapter-2-main-topic)
+- [Chapter 8: Primitives](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_primitives/index.ts)
+    - [Chapter 8.1: Types](#chapter-2-main-topic)
+    - [Chapter 8.2: Trutness](#chapter-2-main-topic)
+- [Chapter 9: Functions](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_functions/index.ts)
+    - [Chapter 9.1: Syntax](#chapter-2-main-topic)
+    - [Chapter 9.2: No return type](#chapter-2-main-topic)
+    - [Chapter 9.3: Context](#chapter-2-main-topic)
+    - [Chapter 9.3: Narrowing](#chapter-2-main-topic)
+- [Chapter 10: Objects](#chapter-2-main-topic)
+- [Chapter 11: Types](#chapter-2-main-topic)
+- [Chapter 12: Interfaces](#chapter-2-main-topic)
+- [Chapter 13: Casting](#chapter-2-main-topic)
+- [Chapter 14: Arrays](#chapter-2-main-topic)
 
-
-<details>
-    <summary>
-        <ins>1. Type Unsafety</ins>
-    </summary>
-Introducing two files, namely enabled.js and disabled.js. Check jsconfig.json, where second one is disalbed from type checking, which will introduce an error during execution of the script, which for enabled.js we will be hinted that theres an error prior to execution.
-</details>
-
-<details>
+<!-- <details>
     <summary>
         <ins>2. Hidden Unsafety</ins>
     </summary>
 Introducing a single file, which is type checked by IDE, but simply because we are running javascript with no notion of object types and interfaces, we are having an error that only catchable during runtime (or if we have hawk eyes during development).
-</details>
+</details> -->
 
-<details>
+<!-- <details>
     <summary>
         <ins>3. Non exception unsafety</ins>
     </summary>
 Sometimes, valid javascript, can be the cause for unexpected errors to occur, even though the code does not cause exception on its own.
-</details>
+</details> -->
 
-<details>
+<!-- <details>
     <summary>
         <ins>4. Typo unsafety</ins>
     </summary>
 Writing code during development without any type analysis, like Intellisense in VSCode does for us can lead to a large number of errors, especially typos, which are the worst once you find them out.
-</details>
+</details> -->
 
-<details>
+<!-- <details>
     <summary>
         <ins>5. Uncalled function unsafety</ins>
     </summary>
 Calling functions can easily be missed especially when working nested objects (try using fakerjs in js project with no ts).
-</details>
+</details> -->
 
-<details>
+<!-- <details>
     <summary>
         <ins>6. Hello world</ins>
     </summary>
@@ -91,9 +103,9 @@ The compiler will then type check and compile the TS into JS right next to it. E
 ```sh
 npx tsc --noEmitOnError src/6_hello_world/index.ts
 ```
-</details>
+</details> -->
 
-<details>
+<!-- <details>
     <summary>
         <ins>7. Explicit types</ins>
     </summary>
@@ -105,19 +117,19 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
 <ul>
     <li>8.1 define</li>
     <li>8.1 define</li>
-</ul>
+</ul> -->
 
 
-> 9\. `Functions` - [read code](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_functions/index.ts)
+<!-- > 9\. `Functions` - [read code](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_functions/index.ts)
 
 <ul>
     <li>9.1 syntax</li>
     <li>9.2 no return type - void</li>
     <li>9.3 context</li>
     <li>9.4 narrowing</li>
-</ul>
+</ul> -->
 
-<details>
+<!-- <details>
     <summary>
         <ins>10. Objects</ins>
     </summary>
@@ -127,9 +139,9 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
 - inline type definition
 
 [Read Here](src/10_objects/index.ts)
-</details>
+</details> -->
 
-<details>
+<!-- <details>
     <summary>
         <ins>11. Types</ins>
     </summary>
@@ -151,5 +163,5 @@ IDE that supports TS (like VSCode using TS under the hood), can inffer the types
     <summary>
         <ins>14. Arrays</ins>
     </summary>
-</details>
+</details> -->
 more to come soon...

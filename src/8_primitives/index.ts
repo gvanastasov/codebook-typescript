@@ -9,7 +9,7 @@ import chalk from 'chalk'
  * 
  */
 
-console.log(chalk.bgBlueBright('Chapter 8 - Primitives\n'));
+console.log(chalk.bgGreenBright('Chapter 8 - Primitives\n'));
 
 (
     /**
@@ -22,13 +22,15 @@ console.log(chalk.bgBlueBright('Chapter 8 - Primitives\n'));
      * 
      * 
      */
-    function all() {
+    function types() {
+        console.log(chalk.bgBlueBright("8.1 Types"));
+
         /**
          * @description Represents numeric values, including integers 
          * and floating-point numbers.
          */
         let one: number = 1;
-        console.log(`'${one}' is of type number`);
+        console.log(`'${one}' is of type number.`);
 
         /**
          * @description Represents textual data enclosed in single quotes 
@@ -94,8 +96,8 @@ console.log(chalk.bgBlueBright('Chapter 8 - Primitives\n'));
      * more precise control flow and type analysis in TypeScript, ensuring 
      * hat expressions are evaluated correctly based on their truthiness.
      */
-    function thrutness() {
-        console.log("8.2 thrutness");
+    function trutness() {
+        console.log(chalk.bgBlueBright("\n8.2 thrutness"));
 
         let falsy: any[] = [0, NaN, "", BigInt(0), null, undefined];
         falsy.forEach((x) => {
