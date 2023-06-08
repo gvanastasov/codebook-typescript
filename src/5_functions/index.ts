@@ -241,3 +241,21 @@
         console.log(sum());
     }
 )();
+
+(
+    /**
+     * @description allows you to spread the elements of an array, object, 
+     * or iterable into individual arguments or elements. It is denoted by 
+     * the ellipsis (...) followed by the expression to be spread.
+     */
+    function spreadArguments() {
+        const arr1 = [1, 2, 3];
+        const arr2 = [4, 5, 6];
+
+        arr1.push(...arr2);
+
+        const obj1 = { a: 1, b: 2 };
+        const obj2 = { c: 3, d: 4 };
+        const mergedObject = { ...obj1, ...obj2 };
+    }
+)();
