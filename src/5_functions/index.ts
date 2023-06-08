@@ -213,3 +213,31 @@
         greet("John", "Doe");
     }
 )();
+
+(
+    /**
+     * @description allow you to represent an indefinite number of function 
+     * arguments as an array. They provide a way to define functions that 
+     * can accept a variable number of arguments, which can be useful when 
+     * you don't know in advance how many arguments will be passed to the 
+     * function.
+     */
+    function restParameters() {
+        function sum(...numbers: number[]): number {
+            let total = 0;
+            for (const num of numbers) {
+                total += num;
+            }
+            return total;
+        }
+        
+        // OK
+        console.log(sum(1, 2, 3));
+        
+        // OK
+        console.log(sum(4, 5, 6, 7, 8));
+        
+        // OK
+        console.log(sum());
+    }
+)();
