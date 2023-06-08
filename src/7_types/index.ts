@@ -227,6 +227,19 @@
     }
 )();
 
+(
+    /**
+     * @description type can be defined only for the particular object.
+     * When reusability of a definition is needed, we can then make use
+     * of type aliases or interfaces.
+     */
+    function inlineType() {
+        let obj: { x: number } = { x: 0 };
+
+        console.log(obj.x);
+    }
+)();
+
 (function() {
     // the explicit type definitions string and Date will be stripped 
     // out after compilation

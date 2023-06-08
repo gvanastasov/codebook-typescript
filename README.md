@@ -60,6 +60,7 @@ Reminder - most of the code inhere needs an IDE to make any sense at all, so pul
     - [Chapter 7.6: Equality narrowing](#chapter-2-main-topic)
     - [Chapter 7.7: Contained narrowing](#chapter-2-main-topic)
     - [Chapter 7.8: Unknown type](#chapter-2-main-topic)
+    - [Chapter 7.8: Inline type](#chapter-2-main-topic)
 - [Chapter 8: Interfaces](#chapter-2-main-topic)
 - [Chapter 9: Casting](#chapter-2-main-topic)
 
