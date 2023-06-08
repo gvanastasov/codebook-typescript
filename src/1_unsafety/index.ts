@@ -71,3 +71,27 @@
         console.log((user as any).location);
     }
 )();
+
+/*
+    
+*/
+
+(
+    /**
+     * @description Typos are easy to make without something to analyse 
+     * our code. no error during 'development', BUT error during 'runtime'.
+     */
+    function() {
+        const message = "message";
+
+        try {
+            // @ts-expect-error
+            message.toLocalLowerCase();
+        } catch {
+            console.log("Property 'toLocalLowerCase' does not exist on type 'string'.");
+        }
+        
+        // OK
+        message.toLocaleLowerCase();
+    }
+)();
