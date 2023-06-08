@@ -254,3 +254,29 @@
         }
     }
 )();
+
+(
+    /**
+     * @description type represents any non-primitive type. It is a 
+     * supertype that includes all types derived from the Object type, 
+     * such as arrays, functions, and objects.
+     */
+    function object() {
+        function printObject(obj: object): void {
+            console.log(obj);
+          }
+          
+          try {
+            // @ts-expect-error
+            printObject("Hello");
+          } catch {
+            console.log("Argument of type 'string' is not assignable to parameter of type 'object'.");
+          }
+
+          // OK
+          printObject({ name: "Alice", age: 25 });
+          
+          // OK
+          printObject([1, 2, 3]);          
+    }
+)();
