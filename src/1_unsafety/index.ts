@@ -95,3 +95,35 @@
         message.toLocaleLowerCase();
     }
 )();
+
+(
+    /**
+     * @description when working with javascript objects we can easily
+     * missout if particular object property is function or not. If we
+     * are unaware of the behavior (aka no type to help us) we can make
+     * mistakes, which are only visible during runtime. Below we have 3
+     * functional errors, which javascript will not take into account 
+     * during development stage:
+     *  1. flipCoin does not return value in the catch
+     *  2. flipCoin compares a function (uncalled) with a primitive number
+     *  3. we expected our flag to be a result of function call, but instead
+     *     is an assigned reference to a function object.
+     */
+    function functional() {
+        function flipCoin() {
+            try {
+                // @ts-expect-error
+                return Math.random < 0.5;
+            } catch {
+                console.log("Operator '<' cannot be applied to types '() => number' and 'number'.");
+            }
+        }
+
+        const object: { flag: boolean } = {
+            // @ts-expect-error
+            flag: flipCoin
+        }
+
+        console.log(`flag: ${object.flag}`);
+    }
+)();
