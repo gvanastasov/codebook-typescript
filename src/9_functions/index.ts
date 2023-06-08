@@ -108,3 +108,27 @@
         return result;
     }
 )("admin");
+
+(
+    /**
+     * @description we can also use equality to narrow the type resolution, 
+     * giving us a crossed type. The only case when 'a' and 'b' are equal 
+     * (value and type) is when they are strings, allowing the compiler to be
+     * sure of the interfaces on the object within the block scope of that
+     * equlity narrowing.
+     * 
+     */
+    function equalityNarrowing(a: string | number, b: string | boolean): void {
+        try {
+            // @ts-expect-error
+            a.toLowerCase();
+        } catch {
+            console.log("Property 'a' can be a number, which does not have an interface for 'toLowerCase'.");
+        }
+
+        // OK, 
+        if (a === b) {
+            a.toLowerCase();
+        }
+    }
+)(5, false);
