@@ -64,6 +64,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Inline type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L144)
     - [Never](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L160)
     - [Function type expression](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L206)
+    - [Erasure](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L206)
 - [Chapter 8: Interfaces](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts)
 - [Chapter 9: Casting](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_casting/index.ts)
 - [Chapter 10: Narrowing](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts)

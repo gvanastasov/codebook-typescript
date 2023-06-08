@@ -224,3 +224,33 @@
         }
     }
 )();
+
+(
+    /**
+     * @description happens when using less precise or generic types, 
+     * such as any, in function parameters or return types. Using any 
+     * effectively disables TypeScript's static type checking for that 
+     * particular variable or function, making it less type-safe. This
+     * can be mitigated by using generics (see that chapter for more).
+     */
+    function erasure() {
+        let arr: number[] = [1, 2, 3];
+
+        function firstElement(arr: any[]): any { 
+            return arr[0]; 
+        }
+        
+        let first = firstElement(arr);
+
+        try {
+            console.log(first.toLowerCase());
+        } catch {
+            console.log("Cannot find name 'toLowerCase'.")
+        }
+
+        // OK
+        if (typeof first === "string") {
+            console.log(first.toLowerCase());
+        }
+    }
+)();
