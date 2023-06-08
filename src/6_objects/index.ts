@@ -14,6 +14,32 @@
 
         // OK
         let object: { x: number, y?: number } = { x: 3 }
+        console.log(`y: ${object.y}`);
+    }
+)();
+
+(
+    /**
+     * @description tells the TypeScript compiler to treat the 
+     * property as if it is not nullable or undefined, even if 
+     * the type system suggests that it could be. It's a way 
+     * of asserting your knowledge about the code and telling 
+     * TypeScript that you are certain the value is not null 
+     * or undefined at that point.
+     */
+    function nonNullAssertion() {
+        function log(message: string | null) {
+            console.log(message!.toUpperCase());
+        }
+
+        try {
+            log(null);
+        } catch {
+            console.log("Method 'toUpperCase' cannot be found on 'null'");
+        }
+
+        // OK
+        log("message");
     }
 )();
 
