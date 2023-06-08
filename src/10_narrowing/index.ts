@@ -171,3 +171,29 @@
         return x;
     }
 )();
+
+(
+    /**
+     * @description narrow down the type of a variable within a conditional 
+     * block using a user-defined type predicate. It involves creating a 
+     * custom type guard function that returns a boolean value indicating 
+     * whether a variable satisfies a specific condition.
+     */
+    function predicate(input: string | number) {
+        function isString(value: any): value is string {
+            return typeof value === "string";
+        }
+
+        try {
+            // @ts-expect-error
+            input.toUpperCase();
+        } catch {
+            console.log("Property 'toUpperCase' does not exist on type 'number'.");
+        }
+
+        if (isString(input)) {
+            // OK
+            console.log(input.toUpperCase());
+        }
+    }
+)("message");
