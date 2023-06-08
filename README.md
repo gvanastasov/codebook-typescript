@@ -63,5 +63,6 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Chapter 10.1: Type guard](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L13)
     - [Chapter 10.2: Equality](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L38)
     - [Chapter 10.3: Contained](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L61)
+    - [Chapter 10.4: Instance](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L101)
 
 more to come soon...

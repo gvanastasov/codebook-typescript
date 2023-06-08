@@ -89,3 +89,29 @@
         }
     }
 )();
+
+(
+    /**
+     * @description you can narrow down the type of an object in a 
+     * conditional block, allowing TypeScript to infer more specific 
+     * types within that block. This enables you to perform 
+     * type-specific operations or access properties and methods 
+     * that are only available on the narrowed type.
+     */
+    function instance(x: Date | string) {
+        try {
+            // @ts-expect-error
+            console.log(x.toUTCString());
+        } catch {
+            console.log("Property 'toUTCString' does not exist on type 'string'");
+        }
+
+        if (x instanceof Date) {
+            // OK
+            console.log(x.toUTCString());
+        } else {
+            // OK
+            console.log(x.toUpperCase());
+        }
+    }
+)(new Date());
