@@ -75,5 +75,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Assignment](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L127)
     - [Control flow](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L155)
     - [Predicate](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L182)
+- [Chapter 11: Generics](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts)
+    - [Return type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L18)
 
 more to come soon...
