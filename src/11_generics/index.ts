@@ -59,3 +59,38 @@
         console.log(message.toLowerCase());
     }
 )();
+
+(
+    /**
+     * @description allow you to restrict the types that can 
+     * be used as type arguments for generic parameters. By 
+     * applying constraints, you can enforce certain properties 
+     * or capabilities on the generic type, ensuring that it
+     * meets specific requirements.
+     */
+    function constraints() {
+        type Lengthy = {
+            length: number;
+        }
+        
+        function logLength<T extends Lengthy>(arg: T): void {
+            console.log(arg.length);
+        }
+        
+        try {
+            // @ts-expect-error
+            logLength(5);
+        } catch {
+            console.log("Argument of type 'number' is not assignable to parameter of type 'Lengthy'.");
+        }
+
+        // OK
+        logLength("Hello");
+        
+        // OK
+        logLength([1, 2, 3]);
+        
+        // OK
+        logLength({ length: 10 });
+    }
+)();
