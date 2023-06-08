@@ -121,3 +121,27 @@
         operation.describe();
     }
 )();
+
+(
+    /**
+     * @description allows you to extract properties or elements from objects 
+     * or arrays directly in the function parameter declaration. It provides 
+     * a concise way to assign values to individual variables from complex 
+     * data structures.
+     */
+    function destructuring() {
+        function greet({ name, age }: { name: string; age: number }) {
+            console.log(`Hello ${name}, you are ${age} years old.`);
+        }
+
+        function sum([a, b]: number[]) {
+            console.log(`Sum: ${a + b}`);
+        }
+          
+        const person = { name: "Alice", age: 25 };
+        greet(person);
+
+        const numbers = [2, 3];
+        sum(numbers);
+    }
+)();
