@@ -193,3 +193,34 @@
         getFruitColor("apple");
     }
 )();
+
+
+(
+    /**
+     * @description allow you to define the types of functions, including 
+     * their parameter types and return type. The function type expression 
+     * specifies the shape or signature of a function. Arguments in the
+     * expression must be named, otherwise, they themselves would become
+     * the name, with type any (check OtherOperation type below.)
+     */
+    function functionTypeExpression() {
+        type MathOperation = (x: number, y: number) => number;
+        type OtherOperation = (number) => number;
+
+        const add: MathOperation = (x, y) => x + y;
+        const multiply: MathOperation = (x, y) => x * y;
+        const multiply10: OtherOperation = (x) => x * 10;
+
+        // OK
+        console.log(add(2, 3));
+
+        // OK
+        console.log(multiply(4, 5));
+      
+        try {
+            console.log(multiply10("ops..."));
+        } catch {
+            console.log("The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.");
+        }
+    }
+)();
