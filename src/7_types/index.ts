@@ -280,3 +280,28 @@
           printObject([1, 2, 3]);          
     }
 )();
+
+(
+    /**
+     * @description represents the type for functions. It is a built-in
+     *  type that encompasses all function types, including regular 
+     * functions, arrow functions, and methods.
+     */
+    function functionType() {
+        function add(a: number, b: number): number {
+            return a + b;
+          }
+          
+          try {
+            // @ts-expect-error
+            const fn: Function = "Invalid";
+          } catch {
+            console.log("Type 'string' is not assignable to type 'Function'.");
+          }
+
+          // OK
+          const calculate: Function = add;
+          console.log(calculate(3, 4));
+          
+    }
+)();
