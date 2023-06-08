@@ -207,6 +207,26 @@
     }
 )();
 
+(
+    /**
+     * @description unknown or any, type unchecked
+     * since the declaration type is any, TS cannot check the
+     * interface or the behaviour of the object.
+     */
+    function unknownType() {
+        let obj: any = { x: 0 };
+
+        try {
+           console.log(obj.y);
+        } catch {
+            console.log("Property 'y' does not exist on type '{ x: number; }'.");
+        }
+
+        // OK
+        console.log(obj.x);
+    }
+)();
+
 (function() {
     // the explicit type definitions string and Date will be stripped 
     // out after compilation

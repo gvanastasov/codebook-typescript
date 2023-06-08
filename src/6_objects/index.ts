@@ -1,19 +1,5 @@
 (
     /**
-     * @description unknown or any, type unchecked
-     * 
-     * since the declaration type is any, TS cannot check the
-     * interface or the behaviour of the object.
-     */
-    function unknownType() {
-        let obj: any = { x: 0 };
-        // no error during 'development', BUT error during 'runtime'
-        obj.flip();
-    }
-)();
-
-(
-    /**
      * @description object nesting can be defined with any valid type definition
      * for instance inline, or with interface, or with alias.
      * 
