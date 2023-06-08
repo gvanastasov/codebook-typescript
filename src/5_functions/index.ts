@@ -104,3 +104,46 @@
         sayHelloWorld("Alice", new Date());
     }
 )();
+
+(
+    /**
+     * @description in Javascript, functions are treated as objects, meaning
+     * that apart from being callable, they can also hold other properties.
+     * In Typescript this can be achied by creating a definition with a call
+     * signature. Notice the semicolumn between the args and the return type
+     * as identifier of call signature. Instances can be initialized two ways,
+     * either with Object.assign or via automatic type assertion.
+     * 
+     * Syntax:
+     *      { (args): return_type }
+     */
+    function callSignatures() {
+        type MathOperation = {
+            description: string,
+            (a: number, b: number): number,
+        };
+
+        let add: MathOperation = Object.assign(
+            (a, b) => a + b,
+            {
+                description: "Adds two numbers.",
+            }
+        );
+
+        function multiple(a: number, b: number): number { return a * b };
+        multiple.description = "Multiplies two numbers."
+
+        // OK
+        console.log(add.description);
+        
+        // OK
+        console.log(add(3, 5));
+
+        // OK
+        (function logResult(fn: MathOperation): void {
+            let result = fn(3, 5);
+            console.log(fn.description);
+            console.log(`3 * 5 = ${result}`);
+        })(multiple);
+    }
+)();
