@@ -57,12 +57,12 @@ Reminder - most of the code inhere needs an IDE to make any sense at all, so pul
     - [Chapter 7.2: Union](#chapter-2-main-topic)
     - [Chapter 7.3: Intersection](#chapter-2-main-topic)
     - [Chapter 7.4: Literals](#chapter-2-main-topic)
-    - [Chapter 7.5: Narrowing](#chapter-2-main-topic)
-    - [Chapter 7.6: Equality narrowing](#chapter-2-main-topic)
-    - [Chapter 7.7: Contained narrowing](#chapter-2-main-topic)
-    - [Chapter 7.8: Unknown type](#chapter-2-main-topic)
-    - [Chapter 7.8: Inline type](#chapter-2-main-topic)
+    - [Chapter 7.5: Unknown type](#chapter-2-main-topic)
+    - [Chapter 7.6: Inline type](#chapter-2-main-topic)
 - [Chapter 8: Interfaces](#chapter-2-main-topic)
 - [Chapter 9: Casting](#chapter-2-main-topic)
-
+- [Chapter 10: Narrowing](#chapter-2-main-topic)
+    - [Chapter 10.1: Type guard](#chapter-2-main-topic)
+    - [Chapter 10.2: Equality](#chapter-2-main-topic)
+    - [Chapter 10.3: Contained](#chapter-2-main-topic)
 more to come soon...
