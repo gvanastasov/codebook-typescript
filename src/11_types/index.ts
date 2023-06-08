@@ -58,7 +58,7 @@
 
 (
     /**
-     * @description allow you to combine multiple types into a single 
+     * @description allows you to combine multiple types into a single 
      * type that includes all the properties and behaviors of the 
      * constituent types. It represents the intersection of the individual 
      * types, meaning the resulting type will have all the common 
@@ -90,49 +90,30 @@
     }
 )();
 
-(function() {
+(
+    /**
+     * @description allows you to specify exact values that a variable or 
+     * parameter can hold. With literal types, you can restrict the 
+     * possible values to a specific set of predefined values.
+     */
+    function literals() {
+        type statusCode =  200 | 400 | 404;
 
-    // this is NOT extending, but rather JOIN
-    // between type definitions.
-    type Point3D = Point & {
-        z: number;
+        function printStatusCode(statusCode: statusCode): void {
+            console.log(statusCode);
+        }
+
+        try {
+            // @ts-expect-error
+            printStatusCode(500);
+        } catch {
+            console.log("Argument of type '500' is not assignable to parameter of type 'statusCode'.");
+        }
+
+        // OK
+        printStatusCode(200);
     }
-
-    // literals
-    let literal: 'one';
-
-    // ok
-    literal = 'one';
-
-    // error
-    literal = 'two';
-
-    let literalDigits: 'one' | 'two' | 'three';
-    
-    // ok
-    literalDigits = 'one';
-    // ok
-    literalDigits = 'two';
-    // ok
-    literalDigits = 'three';
-
-    // error
-    literalDigits = 'four';
-
-       // unions
-       function printNumber(number: string | number): void {
-        console.log(number);
-        return;
-    }
-    // no error during 'development'
-    printNumber(1);
-
-    // no error during 'development'
-    printNumber(2);
-
-    // error
-    printNumber({ number: 3 });
-})();
+)();
 
 (
     /**

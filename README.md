@@ -56,6 +56,7 @@ Reminder - most of the code inhere needs an IDE to make any sense at all, so pul
     - [Chapter 11.1: Aliases](#chapter-2-main-topic)
     - [Chapter 11.2: Union](#chapter-2-main-topic)
     - [Chapter 11.3: Intersection](#chapter-2-main-topic)
+    - [Chapter 11.4: Literals](#chapter-2-main-topic)
     - [Chapter 11: Narrowing](#chapter-2-main-topic)
     - [Chapter 11: Equality Narrowing](#chapter-2-main-topic)
     - [Chapter 11: Contained Narrowing](#chapter-2-main-topic)
