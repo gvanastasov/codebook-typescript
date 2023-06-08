@@ -80,3 +80,27 @@
         );
     }
 )();
+
+(
+    /**
+     * @description explicit arguments in functions refer to explicitly 
+     * declaring the types of the function parameters. By specifying 
+     * the types of the arguments, you provide clarity and enforce type 
+     * safety within the function.
+     */
+    function explicitArguments() {
+        function sayHelloWorld(person: string, date: Date): void {
+            console.log(`${person} [${date.toDateString()}]: Hello world!`);
+        }
+        
+        try {
+            // @ts-expect-error
+            sayHelloWorld("John", Date());
+        } catch {
+            console.log("Argument of type 'string' is not assignable to parameter of type 'Date'.");
+        }
+
+        // OK
+        sayHelloWorld("Alice", new Date());
+    }
+)();

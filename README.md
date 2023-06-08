@@ -50,6 +50,7 @@ Reminder - most of the code inhere needs an IDE to make any sense at all, so pul
     - [Chapter 5.1: Syntax](#chapter-2-main-topic)
     - [Chapter 5.2: No return type](#chapter-2-main-topic)
     - [Chapter 5.3: Context](#chapter-2-main-topic)
+    - [Chapter 5.3: Explicit arguments](#chapter-2-main-topic)
 - [Chapter 6: Objects](#chapter-2-main-topic)
 - [Chapter 7: Types](#chapter-2-main-topic)
     - [Chapter 7.1: Aliases](#chapter-2-main-topic)
