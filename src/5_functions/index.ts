@@ -147,3 +147,42 @@
         })(multiple);
     }
 )();
+
+(
+    /**
+     * @description used to define the shape and type of a constructor function 
+     * for creating new objects. Construct signatures are similar to call 
+     * signatures but are specifically used for constructing instances of classes 
+     * or objects.
+     */
+    function constructorSignature() {
+        class User {
+            constructor(firstName: string, lastName: string) {
+                // silence is gold.
+            }
+        }
+
+        class LoggedUser {
+            constructor(firstName: string, lastName: string) {
+                console.log(`${firstName} ${lastName}`);
+            }
+        }
+
+        type UserConstructor = {
+            new (firstName: string, lastName: string): User,
+        };
+
+        let userConstructor: UserConstructor = User;
+        let loggedUserConstructor: UserConstructor = LoggedUser;
+
+        function fn(ctor: UserConstructor) {
+            return new ctor("John", "Doe");
+        }
+
+        // OK
+        let user = fn(userConstructor);
+
+        // OK
+        let loggedUser = fn(loggedUserConstructor);
+    }
+)();
