@@ -20,12 +20,12 @@
 
 (
     /**
-     * @description tells the TypeScript compiler to treat the 
-     * property as if it is not nullable or undefined, even if 
-     * the type system suggests that it could be. It's a way 
-     * of asserting your knowledge about the code and telling 
-     * TypeScript that you are certain the value is not null 
-     * or undefined at that point.
+     * @description the exclamation mark before object's property 
+     * tells the TypeScript compiler to treat the property as if 
+     * it is not nullable or undefined, even if the type system 
+     * suggests that it could be. It's a way of asserting your 
+     * knowledge about the code and telling TypeScript that you 
+     * are certain the value is not null or undefined at that point.
      */
     function nonNullAssertion() {
         function log(message: string | null) {
