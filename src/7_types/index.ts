@@ -147,3 +147,43 @@
         console.log(obj.x);
     }
 )();
+
+(
+    /**
+     * @description represents a type that indicates the absence of a 
+     * value. It is used to denote situations where a function never 
+     * returns or a variable cannot have any possible value. useful in 
+     * scenarios where you want to express that something should never 
+     * occur or when working with control flow analysis to ensure 
+     * exhaustive handling of all possible cases.
+     */
+    function never() {
+        type Fruit = "apple" | "banana" | "orange";
+
+        function getFruitColor(fruit: Fruit): string {
+            switch (fruit) {
+                case "apple":
+                    return "red";
+                case "banana":
+                    return "yellow";
+                default:
+                    try {
+                        // @ts-expect-error
+                        const exhaustiveCheck: never = fruit;
+                        throw new Error(`Unhandled fruit: ${exhaustiveCheck}`);
+                    } catch {
+                        console.log("Type 'string' is not assignable to type 'never'.");
+                    }
+            }
+        }
+
+        try {
+            getFruitColor("orange");
+        } catch {
+            console.log("unreachable was reached, because we forgot to handle orange.");
+        }
+
+        // OK
+        getFruitColor("apple");
+    }
+)();

@@ -60,6 +60,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Chapter 7.4: Literals](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L99)
     - [Chapter 7.5: Unknown type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L124)
     - [Chapter 7.6: Inline type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L144)
+    - [Chapter 7.7: Never](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L160)
 - [Chapter 8: Interfaces](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts)
 - [Chapter 9: Casting](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_casting/index.ts)
 - [Chapter 10: Narrowing](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts)
