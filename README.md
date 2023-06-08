@@ -65,5 +65,6 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Chapter 10.3: Contained](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L61)
     - [Chapter 10.4: Instance](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L101)
     - [Chapter 10.5: Assignment](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L127)
+    - [Chapter 10.5: Control flow](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L155)
 
 more to come soon...

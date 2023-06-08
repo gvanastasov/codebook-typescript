@@ -141,3 +141,33 @@
         x = "another_message";
     }
 )();
+
+(
+    /**
+     * @description the return type of our function expects a string or a
+     * number. Given our 'x' initialized with a boolean value, would throw
+     * an error unless the code changes the type of 'x' to either string or
+     * number. The moment we have a condition on the else statement, theres
+     * a execution possibility in which neither conditions are met, and 'x'
+     * type stays boolean, which is unaccepted return type, aka controlling
+     * the flow.
+     */
+    function controlFlow(): string | number {
+        let x: string | number | boolean;
+
+        // Error
+        x = true;
+
+        if (Math.random()) {
+            x = "message";
+
+            // OK
+            console.log(x.toLowerCase());
+        } else {
+            // OK
+            x = 5;
+        }
+
+        return x;
+    }
+)();
