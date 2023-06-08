@@ -51,6 +51,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Explicit arguments](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts#L91)
     - [Call signature](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts#L120)
     - [Constructor signature](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts#L158)
+    - [Overloads](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts#L197)
 - [Chapter 6: Objects](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts)
     - [Optional property](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L7)
     - [Non null assertion](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L30)

@@ -186,3 +186,30 @@
         let loggedUser = fn(loggedUserConstructor);
     }
 )();
+
+(
+    /**
+     * @description allow you to provide multiple function signatures for a single 
+     * function implementation. By using function overrides, you can define different 
+     * sets of parameters and return types for a function, providing flexibility 
+     * in how the function can be called while maintaining type safety.
+     */
+    function overloads() {
+        function greet(name: string): void;
+        function greet(firstName: string, lastName: string): void;
+
+        function greet(arg1: string, arg2?: string): void {
+            if (arg2) {
+                console.log(`Hello, ${arg1} ${arg2}!`);
+            } else {
+                console.log(`Hello, ${arg1}!`);
+            }
+        }
+
+        // OK
+        greet("John");
+        
+        // OK
+        greet("John", "Doe");
+    }
+)();
