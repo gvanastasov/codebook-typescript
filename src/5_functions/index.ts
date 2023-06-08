@@ -194,7 +194,7 @@
      * sets of parameters and return types for a function, providing flexibility 
      * in how the function can be called while maintaining type safety.
      */
-    function overloads() {
+    function overloadSignatures() {
         function greet(name: string): void;
         function greet(firstName: string, lastName: string): void;
 
