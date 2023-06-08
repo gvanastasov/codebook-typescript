@@ -46,3 +46,28 @@
         fn({ callback: () => {}});
     }
 )();
+
+(
+    /**
+     * @description no error during 'development', no error during 'runtime'
+     * BUT we are trying to access/work with something 'undefined' as much 
+     * as this is expected behavior for JS, it can also be considered as 
+     * error prone piece of code. TS would remind us that this is not existing.
+     */
+    function nonException () {
+        const user = {
+            id: 1,
+            name: "admin",
+        };
+
+        try {
+            // @ts-expect-error
+            console.log(user.location);
+        } catch {
+            console.log("Property 'location' does not exist on type '{ id: number; name: string; }'.")
+        }
+
+        // OK
+        console.log((user as any).location);
+    }
+)();
