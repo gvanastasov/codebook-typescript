@@ -81,7 +81,7 @@
      * @description Typos are easy to make without something to analyse 
      * our code. no error during 'development', BUT error during 'runtime'.
      */
-    function() {
+    function typo() {
         const message = "message";
 
         try {
