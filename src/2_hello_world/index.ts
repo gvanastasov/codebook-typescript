@@ -1,10 +1,19 @@
-(function() {
-    console.log("Hello world!");
-    
-    function sayHelloWorld(person, date) {
-        console.log(`${person} [${date}]: Hello world!`);
+(
+    /**
+     * @description typescript is awesome.
+     */
+    function helloWorld() {
+        function sayHelloWorld(person: string, date: string): void {
+            console.log(`${person} [${date}]: Hello world!`);
+        }
+        
+        try {
+            // @ts-expect-error
+            sayHelloWorld("John");
+        } catch {
+            console.log("An argument for 'date' was not provided.");
+        }
+
+        sayHelloWorld("Johana", Date());
     }
-    
-    // compile time error - TS2554: Expected 2 arguments, but got 1
-    sayHelloWorld("John");
-})();
+)();
