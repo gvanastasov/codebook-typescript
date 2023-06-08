@@ -52,6 +52,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
 - [Chapter 6: Objects](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts)
     - [Chapter 6.1: Optional property](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L7)
     - [Chapter 6.2: Non null assertion](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L30)
+    - [Chapter 6.2: Optional chaining](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L55)
 - [Chapter 7: Types](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts)
     - [Chapter 7.1: Aliases](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L11)
     - [Chapter 7.2: Union](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L37)

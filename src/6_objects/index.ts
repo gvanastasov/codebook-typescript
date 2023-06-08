@@ -45,6 +45,35 @@
 
 (
     /**
+     * @description allows you to safely access properties and methods 
+     * of an object without worrying about potential null or undefined 
+     * values. Especially useful when dealing with complex data structures 
+     * or when accessing properties that may be missing in some objects. 
+     * It allows you to gracefully handle cases where properties are 
+     * absent, avoiding runtime errors caused by null or undefined values.
+     */
+    function optionalChaining() {
+        let user: 
+            { 
+                name: string, 
+                address?: { street: string, city: string }
+            } = {
+                name: "Alice"
+            };
+        
+        try {
+            console.log(user.address.street);
+        } catch {
+            console.log("Cannot find property 'street' on undefined.");
+        }
+
+        // OK
+        console.log(`Address: ${ user.address?.street }`)
+    }
+)();
+
+(
+    /**
      * @description object nesting can be defined with any valid type definition
      * for instance inline, or with interface, or with alias.
      * 
