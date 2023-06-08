@@ -44,10 +44,8 @@ Reminder - most of the code inhere needs an IDE to make any sense at all, so pul
     - [Chapter 1.4: Typo](#chapter-2-main-topic)
     - [Chapter 1.5: Functional](#chapter-2-main-topic)
 - [Chapter 2: Hello World!](#chapter-2-main-topic)
-- [Chapter 3: Explicit types](#chapter-2-main-topic)
-- [Chapter 4: Primitives](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_primitives/index.ts)
-    - [Chapter 4.1: Types](#chapter-2-main-topic)
-    - [Chapter 4.2: Trutness](#chapter-2-main-topic)
+- [Chapter 3: Primitives](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_primitives/index.ts)
+- [Chapter 4: Arrays](#chapter-2-main-topic)
 - [Chapter 5: Functions](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_functions/index.ts)
     - [Chapter 5.1: Syntax](#chapter-2-main-topic)
     - [Chapter 5.2: No return type](#chapter-2-main-topic)
@@ -63,6 +61,5 @@ Reminder - most of the code inhere needs an IDE to make any sense at all, so pul
     - [Chapter 7.7: Contained Narrowing](#chapter-2-main-topic)
 - [Chapter 8: Interfaces](#chapter-2-main-topic)
 - [Chapter 9: Casting](#chapter-2-main-topic)
-- [Chapter 10: Arrays](#chapter-2-main-topic)
 
 more to come soon...
