@@ -132,3 +132,43 @@
         }
     }
 )(5, false);
+
+(
+    /**
+     * @description the "in" operator is used to check if a specified 
+     * property exists in an object or if an element exists in an array.
+     * For TS compiler, it provides ensurance of the type by narrowing
+     * down the types that fit the described interface.
+     * 
+     */
+    function containedNarrowing() {
+        type fish = { swim: () => void, eat: () => void };
+        type bird = { fly: () => void, eat: () => void };
+
+        function move(animal: fish | bird) {
+            try {
+                // @ts-expect-error
+                animal.swim();
+            } catch {
+                console.log("Argument 'animal' might by of type bird, which cannot 'swim'.");
+            }
+
+            try {
+                if ("eat" in animal) {
+                    // @ts-expect-error
+                    animal.swim();
+                }
+            } catch {
+                console.log("Argument 'animal' might have an interface 'eat', but theres not enough narrowing of the exact type.")
+            }
+            
+            // OK
+            animal.eat();
+
+            if ("swim" in animal) {
+                // OK
+                animal.swim();
+            }
+        }
+    }
+)();
