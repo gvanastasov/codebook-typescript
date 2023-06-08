@@ -85,3 +85,39 @@
         return;
     }
 )({ firstName: "John", lastName: "Doe" });
+
+(
+    /**
+     * @description 'this' refers to the current instance of an object or the 
+     * object on which a method is being called.
+     */
+    function reference() {
+        class Person {
+            name: string;
+          
+            constructor(name: string) {
+              this.name = name;
+            }
+          
+            greet(): void {
+              console.log(`Hello, my name is ${this.name}.`);
+            }
+        }
+
+        let operation: { type: "add", describe: () => void } = {
+            type: "add",
+            describe() {
+                if (this.type === "add") {
+                    console.log("can sum up numbers.")
+                }
+            }
+        }
+
+        // OK
+        const person = new Person("Alice");
+        person.greet();
+
+        // OK
+        operation.describe();
+    }
+)();
