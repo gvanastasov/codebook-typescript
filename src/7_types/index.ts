@@ -155,7 +155,13 @@
      * returns or a variable cannot have any possible value. useful in 
      * scenarios where you want to express that something should never 
      * occur or when working with control flow analysis to ensure 
-     * exhaustive handling of all possible cases.
+     * exhaustive handling of all possible cases. 
+     * 
+     * Example:
+     *      imagine Fruit type below was defined somewhere far away from 
+     *      the switch-case, and then suddenly a new fruit is added, we 
+     *      would instantly get a compiler error that unreachable code 
+     *      was added.
      */
     function never() {
         type Fruit = "apple" | "banana" | "orange";
