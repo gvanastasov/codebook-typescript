@@ -115,3 +115,29 @@
         }
     }
 )(new Date());
+
+(
+    /**
+     * @description a mechanism that allows you to narrow down 
+     * the type of a variable based on the result of an assignment 
+     * or a comparison operation. TypeScript uses control flow 
+     * analysis to determine the narrowed type of a variable 
+     * within specific code blocks.
+     */
+    function assignment() {
+        let x = Math.random() < 0.5 ? 10 : "message";
+
+        try {
+            // @ts-expect-error
+            x = true;
+        } catch {
+            console.log("Type 'boolean' is not assignable to type 'string | number'.");
+        }
+
+        // OK
+        x = 5;
+
+        // OK
+        x = "another_message";
+    }
+)();
