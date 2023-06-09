@@ -144,3 +144,25 @@
         let user = new User("John", 1);
     }
 )();
+
+(
+    /**
+     * @description unctions defined within a class that define the 
+     * behavior of objects created from that class. They can be used 
+     * to perform actions, manipulate data, or provide functionality. 
+     * Like properties, methods can also have different access 
+     * modifiers.
+     */
+    function methods() {
+        class User {
+            name: string = "annoynimous";
+            
+            say(message: string): void {
+                console.log(`${this.name}: ${message}`);
+            }
+        }
+
+        let user = new User();
+        user.say("message"); 
+    }
+)();
