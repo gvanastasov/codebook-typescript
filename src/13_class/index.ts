@@ -118,3 +118,29 @@
         let user = new User("John", "john@email")
     }
 )();
+
+(
+    /**
+     * @description used to make calls to the parent class constructor 
+     * or parent class methods. It allows you to access and invoke the 
+     * members defined in the parent class.
+     */
+    function superCall() {
+        class Person {
+            name: string;
+            constructor(name: string) {
+                this.name = name;
+            }
+        }
+
+        class User extends Person {
+            id: string;
+            constructor(name: string, id: number) {
+                super(name);
+                this.id = `${this.name}_${id}`;
+            }
+        }
+
+        let user = new User("John", 1);
+    }
+)();
