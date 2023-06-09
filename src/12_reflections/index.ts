@@ -84,7 +84,11 @@
      * @description allow you to access the type of a property within 
      * another type using an index-like syntax. It provides a way to 
      * retrieve a specific property's type dynamically based on a given 
-     * key.
+     * key. Indexed Access Types are particularly useful when you want 
+     * to create reusable and dynamic code that accesses specific 
+     * properties within a type based on runtime or compile-time 
+     * information. It allows you to work with properties in a more 
+     * flexible and generic way.
      */
     function indexingTypes() {
         const people = [
