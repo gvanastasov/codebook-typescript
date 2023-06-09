@@ -93,20 +93,3 @@
         printUser(user);
     }
 )();
-
-(
-    /**
-     * @description allow you to create reusable interfaces that can 
-     * work with different types. They provide flexibility and type 
-     * safety by allowing you to parameterize the types used within 
-     * the interface.
-     */
-    function generics() {
-        interface Box<T> {
-            contents: T;
-        }
-
-        let number: Box<number> = { contents: 5 };
-        let char: Box<string> = { contents: "a" };
-    }
-)();
