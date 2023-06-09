@@ -327,8 +327,13 @@
             }
         }
 
+        // OK
         let num = formatId(5);
         
+        // OK
         let str = formatId("100");
+
+        // OK
+        let numOrStr = formatId(Math.random() ? "100" : 5)
     }
 )();
