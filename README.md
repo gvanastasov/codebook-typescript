@@ -65,6 +65,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Readonly modifier](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L178)
     - [Readonly mutation](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L211)
     - [Index signature](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L242)
+    - [Excess property check](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L269)
 - [Chapter 7: Types](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts)
     - [Aliases](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L11)
     - [Union](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L37)

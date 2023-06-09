@@ -257,3 +257,36 @@
         console.log(colors["red"]);
     }
 )();
+
+(
+    /**
+     * @description help ensure type safety by checking for unexpected or additional 
+     * properties when assigning or passing objects to a type with specified properties.
+     * Excess property checks help catch potential mistakes and ensure type safety 
+     * in TypeScript by ensuring that objects adhere to the specified type's property 
+     * structure. There a multiple ways to bypass the check.
+     */
+    function excessPropertyCheck() {
+        interface Point { x: number; y: number; };
+        interface PointExcess { x: number; y: number; [propName: string]: any; }
+        
+        function printPoint(p: Point): void {
+            console.log(`${p.x}, ${p?.y}`);
+        }
+
+        try {
+            // @ts-expect-error
+            let point: Point = { x: 1, y: 2, z: 3 };
+        } catch {
+            console.log("Object literal may only specify known properties, and 'z' does not exist in type 'Point'.");
+        }
+
+        // OK
+        let p1: PointExcess = { x: 1, y: 2, z: 3, d: 4 };
+        printPoint(p1)
+
+        // OK
+        let p2: Point = { x: 1, y: 2, z: 3 } as Point;
+        printPoint(p2);
+    }
+)();
