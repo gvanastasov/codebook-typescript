@@ -245,3 +245,31 @@
         user.id = "1";
     }
 )();
+
+(
+    /**
+     * @description enforce that the class adheres to the structure 
+     * defined by the interface. When a class implements an interface, 
+     * it must provide implementations for all the members (properties 
+     * and methods) specified by the interface(s).
+     */
+    function interfaces() {
+        interface IPrintable {
+            print: () => void;
+        }
+
+        interface ISharable {
+            share: (url: string) => void;
+        }
+
+        class Document implements IPrintable, ISharable {
+            content: string = "";
+            print() {
+                console.log(this.content);
+            }
+            share(url) {
+                console.log(`Document sent to ${url}`);
+            }
+        }
+    }
+)();
