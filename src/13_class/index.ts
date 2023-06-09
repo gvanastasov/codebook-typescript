@@ -16,7 +16,7 @@
      * state or characteristics of objects created from that class.
      * they can be initialized before instance is constructed.
      */
-    function properties() {
+    function fields() {
         class User {
             name: string;
             flag = true;
@@ -155,7 +155,7 @@
      */
     function methods() {
         class User {
-            name: string = "annoynimous";
+            name: string = "annonymous";
             
             say(message: string): void {
                 console.log(`${this.name}: ${message}`);
@@ -166,3 +166,45 @@
         user.say("message"); 
     }
 )();
+
+(
+    /**
+     * @description a way to define special methods that allow you 
+     * to access and modify the values of an object's properties. 
+     * They provide control over how properties are accessed and 
+     * set, allowing you to enforce validation rules, perform 
+     * additional actions, or compute values dynamically.
+     * 
+     * Notice: 
+     *      types are narrowed by context, so TS saves us some time.
+     *      property with no setter, is a readonly property
+     */
+    function properties() {
+        class User {
+            _name: string = "annonymous";
+            get name() {
+                return this._name;
+            }
+            set name(value) {
+                this._name = value;
+            }
+
+            _email: string = "email";
+            get email() {
+                return this._email;
+            }
+        }
+
+        let user = new User();
+
+        try {
+            // @ts-expect-error
+            user.email = "email";
+        } catch {
+            console.log("Cannot assign to 'email' because it is a read-only property.");
+        }
+
+        // OK
+        user.name = "John";
+    }
+)

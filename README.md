@@ -111,11 +111,12 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Indexing types](https://github.com/gvanastasov/codebook-typescript/blob/main/src/12_reflections/index.ts#L89)
 - [Chapter 13: Class](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts)
     - [Syntax](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L8)
-    - [Properties](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L18)
+    - [Fields](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L18)
     - [Readonly](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L39)
     - [Constructors](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L63)
     - [Overloads](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L97)
     - [Super call](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L128)
     - [Methods](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
+    - [Properties](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
 
 more to come soon...
