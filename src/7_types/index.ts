@@ -305,3 +305,30 @@
           
     }
 )();
+
+(
+    /**
+     * @description allow you to define types that depend on a condition 
+     * or set of conditions. They provide a way to create type 
+     * transformations based on the evaluation of a type condition.
+     */
+    function conditionalTypes() {
+        type Id<T extends number | string> = T extends number
+            ? number
+            : string;
+
+        function formatId<T extends number | string>(arg: T): Id<T> {
+            if (typeof arg === "number") {
+                return arg as Id<T>;
+            } else if (typeof arg === "string") {
+                return arg as Id<T>;
+            } else {
+                throw new Error("Invalid argument type");
+            }
+        }
+
+        let num = formatId(5);
+        
+        let str = formatId("100");
+    }
+)();

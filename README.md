@@ -83,6 +83,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Erasure](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L236)
     - [Object type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L264)
     - [Function type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L290)
+    - [Conditional type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L315)
 - [Chapter 8: Interfaces](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts)
     - [Syntax](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts#L18)
     - [Contract](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts#L36)
