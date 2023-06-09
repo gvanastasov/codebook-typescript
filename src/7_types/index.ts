@@ -337,3 +337,37 @@
         let numOrStr = formatId(Math.random() ? "100" : 5)
     }
 )();
+
+(
+    /**
+     * @description allow you to create new types based on the properties 
+     * of an existing type. They provide a way to transform or manipulate 
+     * the properties of a type according to certain rules. Mapped types 
+     * use key-value pairs to define the new type, where the keys are the 
+     * property names and the values are the transformed or manipulated 
+     * types.
+     * 
+     * Mapped types are powerful because they allow you to automate the 
+     * creation of new types based on existing ones. They are commonly 
+     * used in scenarios where you want to create modified versions of 
+     * types, such as making properties optional, readonly, or nullable, 
+     * or even creating entirely new properties based on existing ones.
+     */
+    function mappedType() {
+        type Flags<Type> = {
+            [Property in keyof Type]: boolean;
+        };
+
+        type Features = {
+            dark: () => void,
+            authentication: () => boolean,
+        }
+
+        type FeatureFlags = Flags<Features>;
+
+        let featureFlags: FeatureFlags = {
+            dark: true,
+            authentication: false,
+        };
+    }
+)();
