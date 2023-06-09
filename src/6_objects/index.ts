@@ -200,3 +200,34 @@
         user.address.street = "another"
     }
 )();
+
+(
+    /**
+     * @description readonly modifier can be used to make properties of an interface 
+     * read-only, meaning they cannot be modified after initialization. However, if 
+     * an object is assigned to a different interface that doesn't have the readonly 
+     * modifier on its properties, those properties can be modified.
+     */
+    function mappingModifier() {
+        interface ReadonlyUser {
+            readonly name: string;
+        };
+
+        interface User {
+            name: string;
+        }
+
+        let readonlyUser: ReadonlyUser = { name: "John" };
+        let user: User = readonlyUser;
+
+        try {
+            // @ts-expect-error
+            readonlyUser.name = "changed";
+        } catch {
+            console.log("Cannot assign to 'name' because it is a read-only property.");
+        }
+
+        // OK
+        user.name = "changed";
+    }
+)();
