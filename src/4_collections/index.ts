@@ -8,7 +8,7 @@
      * handled but rather returns value of undefined, which is not considered
      * an error.
      */
-    function syntax() {
+    function arraySyntax() {
         let digits: number[] = [0,1,2,3,4,5,6,7,8,9];
         let weekdays: Array<String> = ['Monday', 'Thuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -26,7 +26,7 @@
      * of elements of type T. It is similar to the regular Array<T> type, 
      * but it enforces that the array cannot be modified once it is created.
      */
-    function readonly() {
+    function arrayReadonly() {
         const numbers: ReadonlyArray<number> = [1, 2, 3, 4, 5];
 
         try {
