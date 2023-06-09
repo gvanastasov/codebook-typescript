@@ -81,7 +81,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
 - [Chapter 8: Interfaces](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts)
     - [Syntax](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts#L18)
     - [Contract](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts#L36)
-    - [Extending](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts#L60)
+    - [Extending](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts#L61)
 - [Chapter 9: Casting](https://github.com/gvanastasov/codebook-typescript/blob/main/src/9_casting/index.ts)
 - [Chapter 10: Narrowing](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts)
     - [Type guard](https://github.com/gvanastasov/codebook-typescript/blob/main/src/10_narrowing/index.ts#L13)
