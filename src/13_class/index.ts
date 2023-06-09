@@ -51,3 +51,31 @@
         }
     }
 )();
+
+(
+    /**
+     * @description special methods that are invoked when creating a 
+     * new instance of a class. They are used to initialize the object's 
+     * state and set initial values for its properties. Constructors 
+     * are defined using the constructor keyword and can accept 
+     * parameters.
+     */
+    function constructors() {
+        class User {
+            private name: string;
+            constructor (name: string) {
+                this.name = name;
+            }
+        }
+
+        try {
+            // @ts-expect-error
+            let user = new User();
+        } catch {
+            console.log("An argument for 'name' was not provided.");
+        }
+
+        // OK
+        let user = new User("John");
+    }
+)
