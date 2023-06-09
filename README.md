@@ -44,6 +44,8 @@ It's worth noting that TypeScript introduces additional complexity compared to w
 - [Chapter 2: Hello World!](https://github.com/gvanastasov/codebook-typescript/blob/main/src/2_hello_world/index.ts)
 - [Chapter 3: Primitives](https://github.com/gvanastasov/codebook-typescript/blob/main/src/3_primitives/index.ts)
 - [Chapter 4: Arrays](https://github.com/gvanastasov/codebook-typescript/blob/main/src/4_arrays/index.ts)
+    - [Syntax](https://github.com/gvanastasov/codebook-typescript/blob/main/src/4_arrays/index.ts#L11)
+    - [Readonly](https://github.com/gvanastasov/codebook-typescript/blob/main/src/4_arrays/index.ts#L29)
 - [Chapter 5: Functions](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts)
     - [Syntax](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts#L27)
     - [No return type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts#L59)

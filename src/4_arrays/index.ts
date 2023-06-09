@@ -19,3 +19,24 @@
         console.log(weekdays[8]);
     }
 )();
+
+(
+    /**
+     * @description a type that represents an immutable (read-only) array 
+     * of elements of type T. It is similar to the regular Array<T> type, 
+     * but it enforces that the array cannot be modified once it is created.
+     */
+    function readonly() {
+        const numbers: ReadonlyArray<number> = [1, 2, 3, 4, 5];
+
+        try {
+            // @ts-expect-error
+            numbers[0] = 10;
+        } catch {
+            console.log("Index signature in type 'readonly number[]' only permits reading.");
+        }
+
+        // OK
+        const copy = numbers.map(num => num * 2);
+    }
+)();
