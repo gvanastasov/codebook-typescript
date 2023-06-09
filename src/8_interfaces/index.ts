@@ -55,11 +55,14 @@
      * @description create new interfaces that inherit the properties 
      * and methods from existing interfaces. This allows you to build 
      * on top of existing interfaces and define more specialized or 
-     * specific interfaces based on them.
+     * specific interfaces based on them. We can extend from multiple
+     * interfaces or chain them.
      */
     function extending() {
         interface IPerson { name: string; };
-        interface IUser extends IPerson { email: string; };
+        interface ISecurity { password: string; };
+        interface IUser extends IPerson, ISecurity { email: string; };
+        interface IUserAccount extends IUser { account: string };
 
         function printPerson(person: IPerson): void {
             console.log(person.name);
@@ -70,8 +73,9 @@
         }
 
         let person: IPerson = { name: "Johana" };
-        let user: IUser = { name: "John", email: "john@email.com" };
-        
+        let user: IUser = { name: "John", email: "john@email.com", password: "secret" };
+        let userAccount: IUserAccount = { ...user, account: "1" };
+
         try {
             // @ts-expect-error
             printUser(person);
