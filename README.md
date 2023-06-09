@@ -114,5 +114,6 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Properties](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L18)
     - [Readonly](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L39)
     - [Constructors](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L63)
+    - [Overloads](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L97)
 
 more to come soon...

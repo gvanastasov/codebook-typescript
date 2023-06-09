@@ -78,4 +78,43 @@
         // OK
         let user = new User("John");
     }
-)
+)();
+
+(
+    /**
+     * @description allow you to define multiple signatures for the 
+     * constructor of a class. Each overload provides a different 
+     * set of parameters and return types, allowing for flexibility 
+     * when creating instances of the class.
+     * 
+     * By defining multiple constructor overloads, you can provide 
+     * different ways to create instances of a class based on the 
+     * parameters passed. TypeScript will use the appropriate 
+     * overload based on the arguments provided at the time of object 
+     * creation, ensuring type safety and enabling more flexible 
+     * usage of the class.
+     */
+    function overloads() {
+        class User {
+            name: string = "annonymous";
+            email: string = "";
+
+            constructor();
+            constructor(name: string);
+            constructor(name: string, email: string);
+
+            constructor(name?: string, email?: string) {
+                if (name) {
+                    this.name = name;
+                }
+                if (email) {
+                    this.email = email;
+                }
+            }
+        }
+
+        let annonymous = new User();
+        let username = new User("John")
+        let user = new User("John", "john@email")
+    }
+)();
