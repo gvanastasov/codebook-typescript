@@ -208,7 +208,7 @@
      * an object is assigned to a different interface that doesn't have the readonly 
      * modifier on its properties, those properties can be modified.
      */
-    function mappingModifier() {
+    function readonlyMutation() {
         interface ReadonlyUser {
             readonly name: string;
         };

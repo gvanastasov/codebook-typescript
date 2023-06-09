@@ -63,7 +63,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Destructuring](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L137)
     - [Default values](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L161)
     - [Readonly Modifier](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L178)
-    - [Mapping Modifier](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L211)
+    - [Readonly Mutation](https://github.com/gvanastasov/codebook-typescript/blob/main/src/6_objects/index.ts#L211)
 - [Chapter 7: Types](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts)
     - [Aliases](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L11)
     - [Union](https://github.com/gvanastasov/codebook-typescript/blob/main/src/7_types/index.ts#L37)
