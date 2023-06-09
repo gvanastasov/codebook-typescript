@@ -299,3 +299,64 @@
         animal.makeSound();
     }
 )();
+
+(
+    /**
+     * @description efers to the accessibility or visibility of class 
+     * members (properties and methods) from within and outside the 
+     * class. TypeScript provides three visibility modifiers: public, 
+     * private, and protected, which can be used to control the access 
+     * to class members. If not specified, public is used.
+     * 
+     *      - public are accessible from anywhere
+     *      - private are only accessible within the class where they are defined
+     *      - protected are accessible within the class where they are 
+     *        defined and any subclasses that inherit from that class
+     */
+    function memberAccess() {
+        class Base {
+            private a: number = 0;
+            protected b: number = 1;
+            public c: number = 2;
+            
+            constructor() {
+                // OK
+                console.log(`base access private: ${this.a}`);
+            }
+        }
+
+        class Derived extends Base {
+            constructor() {
+                super();
+
+                try {
+                    // @ts-expect-error
+                    console.log(`derived access private: ${this.a}`);
+                } catch {
+                    console.log("Property 'a' is private and only accessible within class 'Base'.")
+                }
+
+                // OK
+                console.log(`derived access protected: ${this.b}`)
+            }
+        }
+
+        let derived = new Derived();
+        try {
+            // @ts-expect-error
+            console.log(`instance access private: ${derived.a}`);
+        } catch {
+            console.log("Property 'a' is private and only accessible within class 'Base'.")
+        }
+
+        try {
+            // @ts-expect-error
+            console.log(`instance access protected: ${derived.b}`);
+        } catch {
+            console.log("Property 'b' is protected and only accessible within class 'Base'.")
+        }
+
+        // OK
+        console.log(`instance access public: ${derived.c}`);
+    }
+)();
