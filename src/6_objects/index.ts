@@ -150,3 +150,20 @@
         sum(numbers);
     }
 )();
+
+(
+    /**
+     * @description used to provide initial values for function parameters 
+     * or variables when no value or an undefined value is provided. They 
+     * ensure that a parameter or variable has a fallback value if one is 
+     * not explicitly provided.
+     */
+    function defaultValues() {
+        function greet(name: string = "Anonymous") {
+            console.log(`Hello, ${name}!`);
+        }
+
+        greet();
+        greet("John");
+    }
+)();
