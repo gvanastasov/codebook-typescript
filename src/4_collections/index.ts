@@ -83,3 +83,19 @@
         console.log(upperCaseName);
     }
 )();
+
+(
+    /**
+     * @description a built-in collection that allows storing unique 
+     * values of any type. Sets are similar to arrays but with distinct 
+     * elements.
+     */
+    function sets() {
+        const s = new Set([1, 2, "John"]);
+
+        // OK
+        s.add(1);
+
+        console.assert(s.size === 4, "Fail: nothing was added, because 1 already exists in the set.");
+    }
+)();
