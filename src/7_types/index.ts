@@ -371,3 +371,18 @@
         };
     }
 )();
+
+(
+    /**
+     * @description a set of built-in utility types that allow you to 
+     * manipulate and transform string literals and types. These types 
+     * enable you to perform operations such as concatenation, 
+     * substring extraction, replacement, and more, at the type level.
+     */
+    function stringManipulationTypes() {
+        type UppercaseString = Uppercase<'hello'>;
+        type LowercaseString = Lowercase<'UP'>;
+        type CapitalizedString = Capitalize<'world'>;
+        type UncapitalizeString = Uncapitalize<'Up'>;
+    }
+)
