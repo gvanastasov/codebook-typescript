@@ -231,3 +231,29 @@
         user.name = "changed";
     }
 )();
+
+(
+    /**
+     * @description allow you to define the types for accessing properties of an object 
+     * using the bracket notation []. It is a way to define dynamic property names and 
+     * their corresponding value types. Indexing non-existing property would yield back
+     * 'undefined' as a result.
+     */
+    function indexSignature() {
+        interface Dictionary {
+            [key: string]: string;
+        }
+        
+        const colors: Dictionary = {
+            red: "FF0000",
+            green: "00FF00",
+            blue: "0000FF",
+        };
+        
+        // OK
+        console.log(colors["yellow"]);
+
+        // OK
+        console.log(colors["red"]);
+    }
+)();
