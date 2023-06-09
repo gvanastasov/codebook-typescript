@@ -118,5 +118,6 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Super call](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L128)
     - [Methods](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
     - [Properties](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
+    - [Inheritance](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
 
 more to come soon...

@@ -207,4 +207,41 @@
         // OK
         user.name = "John";
     }
-)
+)();
+
+(
+    /**
+     * @description allows a class to inherit properties and methods 
+     * from another class, known as the base class or superclass, 
+     * and extend or override them to create specialized behavior 
+     * in the derived class or subclass.
+     */
+    function inheritance() {
+        class Person {
+            name: string;
+        }
+
+        class User extends Person {
+            id: string;
+        }
+
+        class Admin extends Person {
+            roles: string[];
+        }
+
+        let user = new User();
+
+        try {
+            // @ts-expect-error
+            console.log(user.roles);
+        } catch {
+            console.log("Property 'roles' does not exist on type 'User'");
+        }
+
+        // OK
+        user.name = "John";
+        
+        // OK
+        user.id = "1";
+    }
+)();
