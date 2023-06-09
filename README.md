@@ -120,5 +120,6 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Properties](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
     - [Inheritance](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
     - [Interfaces](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
+    - [Overrides](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
 
 more to come soon...

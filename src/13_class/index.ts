@@ -273,3 +273,29 @@
         }
     }
 )();
+
+(
+    /**
+     * @description a feature that allows a derived class to provide 
+     * its own implementation for a method that is already defined 
+     * in its base class. When a derived class overrides a method, 
+     * it provides a specialized implementation that is specific to
+     * the derived class.
+     */
+    function overrides() {
+        class Animal {
+            makeSound(): void {
+                console.log("Unknown");
+            }
+        }
+        
+        class Dog extends Animal {
+            override makeSound(): void {
+                console.log("Bark");
+            }
+        }
+
+        let animal: Dog = new Dog();
+        animal.makeSound();
+    }
+)();
