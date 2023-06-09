@@ -105,5 +105,6 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Indexing properties](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L8)
     - [Type reflection](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L43)
     - [Return type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L69)
+    - [Indexing types](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L89)
 
 more to come soon...

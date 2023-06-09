@@ -74,7 +74,42 @@
           type AddResult = ReturnType<typeof add>;
           
           const result: AddResult = add(3, 5);
-          
+
           console.log(result); 
+    }
+)();
+
+(
+    /**
+     * @description allow you to access the type of a property within 
+     * another type using an index-like syntax. It provides a way to 
+     * retrieve a specific property's type dynamically based on a given 
+     * key.
+     */
+    function indexingTypes() {
+        const people = [
+            { name: 'Alice', age: 25 },
+            { name: 'Bob', age: 45 },
+        ];
+
+        type Person = typeof people[number];
+        type Name = typeof people[number]['name'];
+        type Age = Person['age'];
+
+        try {
+            // @ts-expect-error
+            let age: Age = people[0]["name"];
+        } catch {
+            console.log("Type 'string' is not assignable to type 'number'.");
+        }
+
+        let name: Name = people[0]['name'];
+        let age: Age = people[0]['age'];
+
+        // OK
+        console.log(name);
+        
+        // OK
+        console.log(age);
     }
 )();
