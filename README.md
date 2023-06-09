@@ -123,5 +123,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Overrides](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
     - [Member access](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L316)
     - [Static members](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L371)
+    - [Abstraction](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L402)
+    - [Polymorphism](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L446)
 
 more to come soon...

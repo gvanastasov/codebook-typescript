@@ -389,4 +389,82 @@
         // OK
         console.log(User.count);
     }
-)
+)();
+
+(
+    /**
+     * @description a class that cannot be instantiated directly. It 
+     * serves as a base class for other classes and provides common 
+     * functionality that can be shared among its subclasses. Abstract 
+     * classes are designed to be extended and serve as blueprints 
+     * for creating derived classes.
+     */
+    function abstraction() {
+        abstract class Animal {
+            abstract makeSound(): void;
+            
+            move(): void {
+                console.log("move");
+            }
+        }
+        
+        class Dog extends Animal {
+            makeSound(): void {
+                console.log("Bark");
+            }
+        }
+        
+        class Cat extends Animal {
+            makeSound(): void {
+                console.log("Meow");
+            }
+        }
+
+        try {
+            // @ts-expect-error
+            let animal = new Animal();
+        } catch {
+            console.log("Cannot create an instance of an abstract class.");
+        }
+
+        // OK
+        let dog = new Dog();
+
+        // OK
+        let cat = new Cat();
+    }
+)();
+
+(
+    /**
+     * @description the ability of objects of different classes to be 
+     * treated as objects of a common parent class. It allows you to 
+     * write code that can work with objects of different types as 
+     * long as they inherit from a common base class or implement a 
+     * common interface.
+     */
+    function polymorphism() {
+        class Person {
+            name: string = "annonymous";
+        }
+
+        class User extends Person {
+            email: string = "email";
+        }
+
+        let user: Person = new User();
+
+        try {
+            // @ts-expect-error
+            console.log(user.email);
+        } catch {
+            console.log("Property 'email' does not exist on type 'Person'.");
+        }
+
+        // OK
+        console.log(user.name);
+
+        // OK
+        console.log((user as User).email);
+    }
+)();
