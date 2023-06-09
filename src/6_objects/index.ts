@@ -167,3 +167,36 @@
         greet("John");
     }
 )();
+
+(
+    /**
+     * @description used to create read-only properties or variables. It 
+     * ensures that the value of a property or variable can't be modified 
+     * once it is assigned. Essentially, it enforces immutability on the 
+     * declared entity.
+     */
+    function readonlyModifier() {
+        type User = {
+            name: string,
+            readonly address: { street: string, city: string }
+        };
+
+        let user: User = {
+            name: "John",
+            address: { street: "street", city: "city" }
+        };
+
+        try {
+            // @ts-expect-error
+            user.address = { street: "another", city: "city" };
+        } catch {
+            console.log("Cannot assign to 'address' because it is a read-only property.");
+        }
+
+        // OK
+        user.name = "name";
+
+        // OK
+        user.address.street = "another"
+    }
+)();
