@@ -101,7 +101,9 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Inference](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L45)
     - [Constraints](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L71)
     - [Generics](https://github.com/gvanastasov/codebook-typescript/blob/main/src/8_interfaces/index.ts#L105)
-- [Chapter 12: Generics](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts)
-    - [Indexing Properties](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L8)
+- [Chapter 12: Reflections](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts)
+    - [Indexing properties](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L8)
+    - [Type reflection](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L43)
+    - [Return type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/11_generics/index.ts#L69)
 
 more to come soon...

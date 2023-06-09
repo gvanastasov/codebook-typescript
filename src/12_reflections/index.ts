@@ -31,4 +31,50 @@
         // OK
         const age = getProperty(person, "age");
     }
-)
+)();
+
+(
+    /**
+     * @description used to obtain the type of a value or expression 
+     * at compile-time. When applied to a function or class, it 
+     * captures the type information related to that function or 
+     * class, including its parameters and return type.
+     */
+    function typeReflection() {
+        function log(name: string): void {
+            console.log(`Hello, ${name}!`);
+        }
+          
+        type LogFunction = typeof log;
+          
+        const message: LogFunction = log;
+
+        try {
+            // @ts-expect-error
+            message(5);
+        } catch {
+            console.log("Argument of type 'number' is not assignable to parameter of type 'string'.");
+        }
+
+        // OK
+        message("John");
+    }
+)();
+
+(
+    /**
+     * @description utility type is used to extract the return type 
+     * of a function.
+     */
+    function returnType() {
+        function add(a: number, b: number): number {
+            return a + b;
+          }
+          
+          type AddResult = ReturnType<typeof add>;
+          
+          const result: AddResult = add(3, 5);
+          
+          console.log(result); 
+    }
+)();
