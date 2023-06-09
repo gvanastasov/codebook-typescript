@@ -360,3 +360,33 @@
         console.log(`instance access public: ${derived.c}`);
     }
 )();
+
+(
+    /**
+     * @description static members belong to the class itself rather 
+     * than to an instance of the class. They are shared among all 
+     * instances of the class and can be accessed directly on the 
+     * class without creating an instance.
+     */
+    function staticMembers() {
+        class User {
+            static count: number = 0;
+            constructor() {
+                User.count++;
+            }
+        }
+
+        let user = new User();
+        let user2 = new User();
+
+        try {
+            // @ts-expect-error
+            console.log(user.count);
+        } catch {
+            console.log("Property 'count' does not exist on type 'User'.");
+        }
+
+        // OK
+        console.log(User.count);
+    }
+)

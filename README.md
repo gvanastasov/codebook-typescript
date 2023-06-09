@@ -121,6 +121,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Inheritance](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
     - [Interfaces](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
     - [Overrides](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L156)
-    - [Member Access](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L316)
+    - [Member access](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L316)
+    - [Static members](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L371)
 
 more to come soon...
