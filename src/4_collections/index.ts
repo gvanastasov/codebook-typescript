@@ -99,3 +99,23 @@
         console.assert(s.size === 4, "Fail: nothing was added, because 1 already exists in the set.");
     }
 )();
+
+(
+    /**
+     * @description a built-in collection that allows storing key-value 
+     * pairs, where both the keys and values can be of any type. Maps 
+     * provide an efficient way to associate values with unique keys 
+     * and perform operations on them.
+     */
+    function maps() {
+        const map = new Map();
+        map.set("apple", 10);
+        map.set("banana", 20);
+
+        // OK
+        console.log(map.get("apple"));
+
+        // OK
+        console.log(map.get("lemon"));
+    }
+)

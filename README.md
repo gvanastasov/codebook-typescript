@@ -48,6 +48,7 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Array Readonly](https://github.com/gvanastasov/codebook-typescript/blob/main/src/4_arrays/index.ts#L29)
     - [Tuples](https://github.com/gvanastasov/codebook-typescript/blob/main/src/4_arrays/index.ts#L57)
     - [Set](https://github.com/gvanastasov/codebook-typescript/blob/main/src/4_arrays/index.ts#L93)
+    - [Map](https://github.com/gvanastasov/codebook-typescript/blob/main/src/4_arrays/index.ts#L110)
 - [Chapter 5: Functions](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts)
     - [Syntax](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts#L27)
     - [No return type](https://github.com/gvanastasov/codebook-typescript/blob/main/src/5_functions/index.ts#L59)
