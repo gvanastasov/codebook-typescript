@@ -40,3 +40,46 @@
         const copy = numbers.map(num => num * 2);
     }
 )();
+
+(
+    /**
+     * @description a type that allows you to express an array with a fixed 
+     * number of elements, where each element may have a different type. 
+     * Tuples provide a way to represent and work with a specific sequence 
+     * of values with known types.
+     * 
+     * Keynotes:
+     *      1. fixed Length
+     *      2. element types
+     *      3. accessing elements
+     *      4. array-like operations
+     */
+    function tuples() {
+        type Person = [string, number, boolean];
+
+        let person: Person = ["John", 30, true];
+
+        try {
+            // @ts-expect-error
+            console.log(person[9]);
+        } catch {
+            console.log("Tuple type 'Person' of length '3' has no element at index '9'.");
+        }
+
+        console.log(person[0]);
+        console.log(person[1]);
+        console.log(person[2]);
+
+        const [name, age, isEmployed] = person;
+        console.log(name);
+        console.log(age);
+        console.log(isEmployed);
+
+        person.forEach(item => {
+            console.log(item);
+        });
+
+        const upperCaseName = person[0].toUpperCase();
+        console.log(upperCaseName);
+    }
+)();
