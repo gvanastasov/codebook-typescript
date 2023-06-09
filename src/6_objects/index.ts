@@ -74,17 +74,22 @@
 
 (
     /**
-     * @description object nesting can be defined with any valid type definition
-     * for instance inline, or with interface, or with alias.
+     * @description also known as object literals or object expressions, 
+     * are objects that are defined on-the-fly without a specific name 
+     * or type declaration. They are commonly used in JavaScript and 
+     * TypeScript to create objects quickly and inline.
      * 
-     * @param user Object
-     * @returns void
      */
-    function args(user: { firstName: string, lastName?: string }) : void {
-        console.log(`${user.firstName}, ${user.lastName}`);
-        return;
+    function anonymous() : void {
+        function log(user: { firstName: string, lastName?: string }): void {
+            console.log(`${user.firstName}, ${user.lastName}`);
+            return;
+        }
+
+        // OK
+        log({ firstName: "John", lastName: "Doe" });
     }
-)({ firstName: "John", lastName: "Doe" });
+)();
 
 (
     /**
