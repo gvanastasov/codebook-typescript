@@ -1,3 +1,5 @@
+> BETA: interactivity is not in place yet...
+ 
 # **Codebook - Typescript**
 Welcome to Codebook - your comprehensive guide to learning TypeScript! Learn by examples from zero to hero in typescript. This repository serves as a valuable resource for beginners and experienced developers alike, offering a curated collection of examples and explanations to help you master TypeScript.
 
