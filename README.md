@@ -1,18 +1,34 @@
 # **Codebook - Typescript**
-Learn by examples from zero to hero in typescript. This repository was used a practice and resource gathering for with the intent to give a crash course in learning typescript. Some topics might not be covered in depth, or might be missing.
+Welcome to Codebook - your comprehensive guide to learning TypeScript! Learn by examples from zero to hero in typescript. This repository serves as a valuable resource for beginners and experienced developers alike, offering a curated collection of examples and explanations to help you master TypeScript.
 
 ## **Quick Start**
-1. clone repo
-2. install dependencies `npm install`
-3. compile typescript `npm run build`
-3. run chapters
+
+Follow these steps to get started with Codebook:
+
+1. Clone the repository to your local machine.
+2. Install the project dependencies by running npm install.
+3. Compile the TypeScript code by running npm run build.
+4. Run the examples for each chapter by executing the corresponding npm script.
 
 ```sh
 # replace number with chapter you want to see output from.
 npm run chapter:1
 ```
 
-Since most of the things will simply output some dummy text, is much better to just read from top to bottom the scripts themselves. Please refer to the sections below to find quick links, or simply head over to `./src` and navigate yourself around. Probably unnecessery to explain it, but still - make sure your node is up and running - `Node 16` at minimum, specified in engines too. No real reasons, but its the one, the code repo is tested and verified to work with. PS ECMA2020 target in the compiler requires a minimum of node-10v.
+Please note that most of the examples will output dummy text. To explore the code in more detail, it's recommended to read the scripts themselves. You can find the source code in the ./src directory and navigate through the chapters.
+
+Ensure that you have Node.js installed on your machine, preferably version 16 or higher as specified in the engines field of the package.json. The code repository has been tested and verified to work with Node.js 16. The ECMA2020 target in the TypeScript compiler requires a minimum of Node.js version 10.
+
+Feel free to explore the quick links provided below or dive into the source code to enhance your learning experience. Happy coding!
+
+> Note: The codebase is continuously tested and maintained, but please be aware that some sections may be under development or not covered in-depth. Your feedback and contributions are highly appreciated to make this repository more valuable for the TypeScript community.
+
+## **What's Inside?**
+
+Codebook covers a wide range of TypeScript topics, starting from the basics and gradually diving into more advanced concepts. Each topic is accompanied by clear and concise examples, allowing you to learn by doing. From primitive types and type aliases to classes, modules, and advanced type systems, Codebook has got you covered.
+
+## **Learning Path**
+This repository is designed as a crash course, guiding you from zero to hero in TypeScript. It's structured in a way that allows you to progressively build your knowledge and skills. Start with the fundamentals and work your way up, tackling more complex concepts as you go. Feel free to explore at your own pace and revisit topics whenever you need a refresher.
 
 ## **What is typescript?**
 
@@ -33,6 +49,12 @@ Since most of the things will simply output some dummy text, is much better to j
 ## **When to typescript?**
 
 It's worth noting that TypeScript introduces additional complexity compared to writing plain JavaScript. If you're working on a small project, have tight deadlines, or require rapid prototyping, TypeScript might not provide substantial benefits, and JavaScript could be a more suitable choice.
+
+## **Contribution**
+
+This codebook is an open-source project, and contributions are welcome! If you find any errors, have suggestions for improvements, or want to add more examples to enhance the learning experience, please feel free to submit a pull request. Together, we can make this an even better resource for the TypeScript community.
+
+> Note: This codebook is continuously evolving, and some topics may be missing or not covered in depth. Your feedback and contributions will help make this repository more comprehensive and valuable for everyone.
 
 ## **Table of Contents**
 - [Chapter 1: Unsafety](https://github.com/gvanastasov/codebook-typescript/blob/main/src/1_unsafety/index.ts)
@@ -126,4 +148,27 @@ It's worth noting that TypeScript introduces additional complexity compared to w
     - [Abstraction](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L402)
     - [Polymorphism](https://github.com/gvanastasov/codebook-typescript/blob/main/src/13_class/index.ts#L446)
 
-more to come soon...
+## **License**
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## **Contributing**
+Contributions to this codebook are welcome! If you have any bug reports, feature requests, or would like to submit a pull request, please follow the guidelines outlined in the [CONTRIBUTING](CONTRIBUTING.md) file.
+
+## **Roadmap**
+The future plans for this codebook include expanding the coverage of TypeScript topics, adding more examples, and providing interactive exercises to reinforce learning. Additionally, we aim to incorporate community feedback and address any reported issues.
+
+## **Acknowledgements**
+Special thanks to the following individuals and projects for their contributions, inspiration, and support:
+- [TypeScript](https://www.typescriptlang.org/): The TypeScript language and community.
+- [Awesome TS](https://github.com/dzharii/awesome-typescript): A curated list of awesome TypeScript resources.
+
+## **Resources**
+Here are some additional resources to further enhance your TypeScript learning:
+- [TypeScript Official Documentation](https://www.typescriptlang.org/docs/)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/)
+
+## **Support**
+If you encounter any issues or have any questions, please feel free to reach out by creating an issue in the [GitHub repository](https://github.com/gvanastasov/codebook-typescript).
+
+## **Conclusion**
+Thank you for your interest in this codebook! We hope this collection of TypeScript examples and explanations helps you on your learning journey. We encourage you to explore the code, experiment, and provide feedback. Happy coding!
